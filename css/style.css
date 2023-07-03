@@ -5,18 +5,17 @@
     --backgroundWhite: #FFFFFF;
     --backgroundGrey: #F5F5F5;
     --backgroundLightBlue: #EAF2FD;
-    --starTitle: 'Starjout';
-    --titles: 'Baloo 2', 'Sans Serif';
-    --text: 'Comfortaa', 'Sans Serif';
-}
-
-@font-face {
-    font-family: 'Starjedi';
-    src: url(/assets/Starjedi.ttf);
+    --starTitle: 'Minecraft Evenings';
+    --titles: 'Press Start 2P', cursive;
+    --text: 'M PLUS Code Latin', sans-serif;;
 }
 @font-face {
-    font-family: 'Starjout';
-    src: url(/assets/Starjout.ttf);
+    font-family: 'Valorax';
+    src: url(/assets/Valorax.otf);
+}
+@font-face {
+    font-family: 'Minecraft Evenings';
+    src: url(/assets/Minecraft.ttf);
 }
 
 /*titulos grandes*/
@@ -26,7 +25,7 @@
 .galeria__productos--title{
     font-weight: 700;
     color: var(--fontDarkColor);
-    font-family:  var(--starTitle);
+    font-family:  var(--titles);
 }
 .destacado{
     font-weight: bolder;
