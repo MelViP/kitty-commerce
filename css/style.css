@@ -17,7 +17,9 @@
     font-family: 'Minecraft Evenings';
     src: url(/assets/Minecraft.ttf);
 }
-
+.whole{
+    padding: 1.5rem;
+}
 /*titulos grandes*/
 .banner__titulo{
     font-family: var(--starTitle);

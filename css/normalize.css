@@ -54,9 +54,6 @@ table {
 }
 body{
     font-family: var(--text);
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 li, figure{
     list-style: none;
