@@ -2,6 +2,7 @@
     padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 4rem;
 }
 .galeria__productos{
