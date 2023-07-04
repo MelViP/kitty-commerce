@@ -1,15 +1,15 @@
 
-![Logo]()
+![Logo](/assets/cat_banner)
 
 
-# Project Title
+# Pixel Kitty E-commerce
 
-A brief description of what this project does and who it's for
+This is a model of a e-commerce about geek products and technology.
 
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+Currently in progress
 
 
 ## Features
