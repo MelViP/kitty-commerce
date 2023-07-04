@@ -5,12 +5,16 @@ header.menu{
     justify-content: space-between;
     padding: 1rem;
 }
+.menu__menu{
+    display: flex;
+    justify-content: space-between;
+}
 .menu__logo{
     display: flex;
     gap: 1rem;
 }
 .menu__logo_logo{
-    background: url(/assets/mando.png) no-repeat center;
+    background: url(/assets/cat_banner) no-repeat center;
     background-size: contain;
     height: 4rem;
     width: 6rem;

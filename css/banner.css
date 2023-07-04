@@ -1,18 +1,25 @@
 .banner{
-    background: url(/assets/back.png) repeat center;
+    background: url(/assets/cats__stores.jpg) repeat center;
     background-size: contain;
     width: 100%;
     height: 18.875rem;
 }
 .banner__box{
     display: flex;
+    flex-direction: column;
     gap: 1.5rem;
     padding: 1rem;
+    text-shadow: 1px 3px 10px black;
 }
 .banner__titulo{
     color: var(--backgroundWhite);
     display: flex;
     align-items: flex-end;
     font-size: 3.375rem;
+}
+.banner__leyenda{
+    color: var(--backgroundWhite);
+    font-weight: 700;
+    font-size: 1.375rem;
 }
 
