@@ -25,3 +25,13 @@ header.menu{
     text-transform: uppercase;
     align-self: center;
 }
+.menu__btn_login{
+    border: 2px solid var(--neonGreen);
+    border-radius: 4rem;
+    padding: 1rem;
+    width: 8.735rem;
+}
+.menu__btn_login__text{
+    font-weight: 700;
+    color: var(--fontDarkColor);
+}

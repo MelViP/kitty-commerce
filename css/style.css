@@ -3,8 +3,10 @@
     --darkBlue: #2A7AE4;
 
     --backgroundWhite: #FFFFFF;
-    --backgroundLightGreen: #f4fcf4;
+    --backgroundDirt: #dd914549;
     --backgroundLightBlue: #EAF2FD;
+    --niceGreen: #dafccc68;
+    --neonGreen: #39FF14;
     --starTitle: 'Minecraft Evenings';
     --titles: 'Press Start 2P', cursive;
     --text: 'M PLUS Code Latin', sans-serif;;
@@ -18,7 +20,7 @@
     src: url(/assets/Minecraft.ttf);
 }
 .whole{
-    background: var(--backgroundLightGreen);
+    background: var(--backgroundDirt);
 }
   
 /*titulos grandes*/
