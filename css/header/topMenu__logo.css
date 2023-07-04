@@ -1,0 +1,36 @@
+.menu__logo{
+    display: flex;
+    gap: 1rem;
+}
+.menu__logo_logo{
+    background: url(/assets/cat_banner) no-repeat center;
+    background-size: contain;
+    height: 4rem;
+    width: 6rem;
+}
+.menu__logo_leyenda{
+    font-weight: 500;
+    font-family: var(--titles);
+    text-transform: uppercase;
+    align-self: center;
+}
+.menu__logo_leyenda_text{
+    margin-bottom: .5rem;
+    transition: all .2s;
+}
+.menu__logo_leyenda_text:first-child:hover {
+    background: -webkit-linear-gradient(45deg, #e32c4a, purple);
+    background: linear-gradient(45deg, #e32c4a, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.menu__logo_leyenda_text:nth-child(2) {
+    background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
+    background: linear-gradient(45deg, #15d6eb, #1dca02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
