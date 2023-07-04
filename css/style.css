@@ -59,6 +59,38 @@
 .input:focus{
     outline: none;
 }
-
+/*logo*/
+.logoBox{
+    display: flex;
+    gap: 1rem;
+}
+.logoPic{
+    background: url(/assets/cat_banner) no-repeat;
+    background-size: contain;
+}
+.logoLeyenda{
+    font-weight: 500;
+    font-family: var(--titles);
+    text-transform: uppercase;
+}
+.logoText{
+    transition: all .2s;
+}
+.logoText:first-child:hover {
+    background: -webkit-linear-gradient(45deg, #e32c4a, purple);
+    background: linear-gradient(45deg, #e32c4a, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.logoText:nth-child(2) {
+    background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
+    background: linear-gradient(45deg, #15d6eb, #1dca02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
 
 

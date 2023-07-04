@@ -2,9 +2,24 @@
     display: flex;
     justify-content: space-around;
 }
+.piePag__logo{
 
+}
+.piePag__logo_logo{
+    width: 8rem;
+    height: auto;
+}
+.piePag__logo_leyenda{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    margin-top: 1.735rem;
+}
 .piePag__menu{
-    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .contactUs{
     display: flex;

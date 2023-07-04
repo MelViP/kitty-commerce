@@ -1,6 +1,7 @@
 .banner{
     background: url(/assets/cats__stores.jpg) repeat center;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
     width: 100%;
     padding: 5rem 0 3rem 0;
 }
