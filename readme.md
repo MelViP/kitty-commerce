@@ -4,7 +4,8 @@
 
 # Pixel Kitty E-commerce
 
-This is a model of a e-commerce about geek products and technology.
+This is a model of a e-commerce about geek products and technology. 
+Presented as ONE-Alura challenge G5
 
 
 ## Lessons Learned
@@ -12,12 +13,11 @@ This is a model of a e-commerce about geek products and technology.
 Currently in progress
 
 
-## Features
+## Comming in Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Desktop mode
+- Mobile mode
+- 
 
 
 ## Authors
