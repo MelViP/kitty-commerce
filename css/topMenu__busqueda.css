@@ -1,0 +1,16 @@
+.menu__busqueda{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e7fdfe;
+    border-radius: 1.735rem;
+    padding: 0 .735rem;
+    transition: all .5s;
+    width: calc(100% - 75%);
+}
+.menu__busqueda:hover{
+    box-shadow: 0px 0px 4px #0FF0FC;
+}
+.menu__barraBusqueda{}
+.menu__btn_busqueda{
+    
+}
