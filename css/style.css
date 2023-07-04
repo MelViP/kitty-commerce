@@ -3,7 +3,7 @@
     --darkBlue: #2A7AE4;
 
     --backgroundWhite: #FFFFFF;
-    --backgroundGrey: #F5F5F5;
+    --backgroundLightGreen: #f4fcf4;
     --backgroundLightBlue: #EAF2FD;
     --starTitle: 'Minecraft Evenings';
     --titles: 'Press Start 2P', cursive;
@@ -18,8 +18,9 @@
     src: url(/assets/Minecraft.ttf);
 }
 .whole{
-    padding: 1.5rem;
+    background: var(--backgroundLightGreen);
 }
+  
 /*titulos grandes*/
 .banner__titulo{
     font-family: var(--starTitle);
@@ -35,11 +36,13 @@
 .btn{
     font-family: var(--text);
     border: 2px solid transparent;
+    background-color: transparent;
 }
-
 .input{
     font-family: var(--text);
     padding: 1rem 0 1rem 1rem;
     border: 2px solid transparent;
+    background-color: transparent;
 }
+
 
