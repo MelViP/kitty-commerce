@@ -1,6 +1,8 @@
 .piePag{
     display: flex;
     justify-content: space-around;
+    background: var(--niceGreen);
+    padding-top: 3rem;
 }
 .piePag__logo{
 
