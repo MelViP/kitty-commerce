@@ -15,10 +15,6 @@
     border-radius: 4rem;
     padding: 1rem;
     width: 8.735rem;
-    transition: all .5s ease-in-out;
-}
-.menu__btn_login:hover{
-    transform: scale(1.1);
 }
 .menu__btn_login__text{
     font-weight: 700;

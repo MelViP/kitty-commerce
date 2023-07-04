@@ -1,16 +1,3 @@
-.banner{
-    background: url(/assets/cats__stores.jpg) repeat center;
-    background-size: contain;
-    width: 100%;
-    padding: 5rem 0 3rem 0;
-}
-.banner__box{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 1rem;
-    text-shadow: 1px 3px 10px black;
-}
 .banner__titulo{
     color: var(--backgroundWhite);
     display: flex;
@@ -33,4 +20,3 @@
     border: 2px solid var(--backgroundWhite);
     background: var(--backgroundDirt);
 }
-

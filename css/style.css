@@ -9,7 +9,8 @@
     --neonGreen: #39FF14;
     --starTitle: 'Minecraft Evenings';
     --titles: 'Press Start 2P', cursive;
-    --text: 'M PLUS Code Latin', sans-serif;;
+    --text: 'M PLUS Code Latin', sans-serif;
+    --credits: 'Valorax';
 }
 @font-face {
     font-family: 'Valorax';
@@ -35,19 +36,29 @@
 .destacado{
     font-weight: bolder;
 }
+
+/*botones general*/
 .btn{
     font-family: var(--text);
     border: 2px solid transparent;
     background-color: transparent;
+    transition: all .5s ease-in-out;
 }
+.btn:hover{
+    transform: scale(1.1);
+}
+
+/*areas de input texto*/
 .input{
     font-family: var(--text);
     padding: 1rem 0 1rem 1rem;
     border: 2px solid transparent;
     background-color: transparent;
+    transition: all .5s ease-in-out;
 }
 .input:focus{
     outline: none;
 }
+
 
 
