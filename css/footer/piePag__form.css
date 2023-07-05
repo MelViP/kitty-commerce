@@ -11,11 +11,14 @@
     border-radius: 8px;
     box-shadow: 0px 0px 5px;
 }
+.form__input:hover,
+.form__textarea:hover{
+    box-shadow: 0px 0px 5px var(--neonGreen);
+}
 .form__btn{
     width: 50%;
     border-radius: 3rem;
     background-color: var(--fondoTransparenteGreen);
     font-weight: 600;
     padding: 1rem 0;
-
 }

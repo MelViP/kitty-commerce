@@ -1,0 +1,25 @@
+.galeria__productos_items{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: all .5s;
+}
+.galeria__productos_items:hover{
+    transform: scale(1.2);
+}
+.galeria__productos_items__foto{
+    border-radius: 0 1rem 0 0;
+}
+.galeria__productos_items__nombre{}
+.galeria__productos_items__precio{}
+.galeria__productos--link{
+    color: var(--fontDarkColor);
+    background-color: var(--backgroundLightBlue);
+    width: fit-content;
+}
+.galeria__productos--link:hover{}
+.galeria__productos--verTodo{
+    border: 2px solid var(--fontDarkColor);
+    border-radius: 0 .5rem 0 0;
+    background-color: rgba(240, 255, 255, 0.729);
+}
