@@ -31,6 +31,8 @@
     flex-direction: column;
     background: url(/assets/catnip.png) no-repeat center/contain;
     /*background-position: left;*/
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
 .rodapie{
     display: flex;
