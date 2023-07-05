@@ -1,4 +1,6 @@
-.form__title
+.form__title span{
+    background-color: var(--backgroundLightBlue);
+}
 .form__input
 .form__textarea
 .form__btn
