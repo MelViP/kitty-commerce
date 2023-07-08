@@ -55,6 +55,7 @@ table {
 }
 body{
     font-family: var(--text);
+	height: 100vh;
 }
 li, figure{
     list-style: none;
