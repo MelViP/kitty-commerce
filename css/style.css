@@ -1,10 +1,11 @@
 :root{
     --fontDarkColor: #464646;
-    --darkBlue: #2A7AE4;
+    --darkBlue: #2a7be4ad;
 
     --backgroundWhite: #FFFFFF;
     --backgroundDirt: #dd914549;
     --backgroundLightBlue: #EAF2FD;
+    --backLightBlueTransparent:#eaf2fda6 ;
     --niceGreen: #dafccc68;
     --neonGreen: #39FF14;
     --fondoTransparenteGreen: #37ff1469;
