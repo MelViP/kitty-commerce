@@ -5,12 +5,13 @@ body{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: var(--titles);
 }
 .home{
     font-weight: 600;
-    color: var(--darkBlue);
-    text-shadow: 2px 2px 8px whitesmoke;
+    color: var(--fontDarkColor);
+    text-shadow: 2px 2px 8px black;
 }
 main{
     display: flex;
@@ -20,16 +21,22 @@ main{
 }
 .container{
     display: flex;
-    padding: 2.5rem;
-    align-content: center;
+    padding-left: 1rem;
+    align-items: center;
+    gap: .5rem;
+    background-color: var(--backLightBlueTransparent);
+}
+.logo{
+    width: 2.735rem;
+    height: auto;
 }
 
+
 .loginForm{
-    width: 30rem;
     display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    gap: 2rem;
+    flex-direction: row-reverse;
+    padding: 2.735rem;
+    gap: 7.375rem;
     align-items: center;
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
@@ -41,12 +48,28 @@ main{
     }
     
 }
+.catLogo{
+    height: auto;
+    width: 28rem;
+    border-radius: 1.735rem;
+    opacity: 0.8;
+    transition: all .3s;
 
+    &:hover{
+        opacity: 1;
+    }
+}
+.form__izq{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .form__title{
     text-transform: uppercase;
     font-family: var(--starTitle);
     font-size: larger;
     letter-spacing: .2375rem;
+    margin-bottom: 1rem;
 }
 
 form{
@@ -90,7 +113,7 @@ input{
 }
 .rodapie{
     font-family: var(--credits);
-    margin-top: auto;
+    /* margin-top: auto; */
     align-items: center;
     background-color: var(--backLightBlueTransparent);
 
