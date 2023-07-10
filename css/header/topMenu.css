@@ -1,22 +1,86 @@
 .menu{
     display: flex;
-    justify-content: center;
-    align-items: center;
     justify-content: space-between;
-    padding: 1rem 6rem;
+
+    & .menu__menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .menu__btn_login{
+        border: 2px solid transparent;
+        background: linear-gradient(48deg, rgba(227, 43, 74, 0.2), rgba(128, 0, 128, 0.2));
+    }
+
+    & .menu__btn_login__text{
+        font-weight: 700;
+        color: var(--fontDarkColor);
+    }
 }
-.menu__menu{
-    display: flex;
-    justify-content: space-between;
+
+
+@media screen and (min-width:0) {
+    .menu{
+        align-items: center;
+        padding: 1rem;
+        gap: .5rem;
+
+        & .menu__menu{
+            align-items: center;
+        }
+        & .menu__btn_login{
+            border-radius: 1rem;
+        }
+        & .menu__btn_login__text{
+            font-size: .8735rem;
+        }
+    }
 }
-.menu__btn_login{
-    border: 2px solid transparent;
-    background: linear-gradient(48deg, rgba(227, 43, 74, 0.2), rgba(128, 0, 128, 0.2));
-    border-radius: 4rem;
-    padding: 1rem;
-    width: 8.735rem;
+
+@media screen and (min-width:410px) {
+    .menu{
+        align-items: center;
+        padding: 1rem 1.735rem;
+        gap: .5rem;
+
+        & .menu__menu{
+            align-items: center;
+        }
+        & .menu__btn_login{
+            border-radius: 2rem;
+            padding: .8735rem;
+        }
+        & .menu__btn_login__text{
+            font-size: 1rem;
+        }
+    }
 }
-.menu__btn_login__text{
-    font-weight: 700;
-    color: var(--fontDarkColor);
+@media screen and (min-width:710px) {
+    .menu{
+        padding: 1rem 3.735rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .menu{
+        padding: 1rem 3.735rem;
+     
+        & .menu__btn_login{
+            border-radius: 4rem;
+            padding: 1rem; 
+            width: 8.735rem;
+        }
+    
+    }
+}
+@media screen and (min-width:1220px) {
+    .menu{
+        padding: 1rem 3.735rem;
+     
+        & .menu__btn_login{
+            border-radius: 4rem;
+            padding: 1rem; 
+            width: 8.735rem;
+        }
+    
+    }
 }
