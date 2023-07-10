@@ -39,15 +39,6 @@
     font-weight: 700;
 }
 
-@media screen and (min-width:0) {
-    .destacado {
-        font-size: .8735rem;
-    }
-    .btn{
-        
-    }
-}
-
 /*botones general*/
 .btn{
     font-family: var(--text);
@@ -62,7 +53,7 @@
 /*areas de input texto*/
 .input{
     font-family: var(--text);
-    padding: 1rem 0 1rem 1rem;
+    /* padding: 1rem 0 1rem 1rem; */
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
@@ -104,4 +95,14 @@
     color: transparent;
 }
 
+@media screen and (min-width:0) {
+    .destacado {
+        font-size: .8735rem;
+    }
+}
+@media screen and (min-width:710px) {
+    .input{
+        padding: .735rem;
+    }
+}
 

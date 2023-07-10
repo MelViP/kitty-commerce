@@ -20,7 +20,7 @@
 @media screen and (min-width:0px) {
 
     .galeria{
-        padding: 1rem;
+        padding: 0;
         gap: 3rem;
 
         & .galeria__productos{

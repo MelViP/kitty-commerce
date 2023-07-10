@@ -1,15 +1,61 @@
-.menu{
-    display: flex;
-    gap: 1rem;
-}
 .menu__logo{
+    display: flex;
     align-items: center;
 }
 .menu__logo_logo{ 
-    height: 4rem;
-    width: 6rem;
+    /* height: 4rem;
+    width: 6rem; */
     background-position: center;
 }
 .menu__logo_leyenda_text{
-    margin-bottom: .5rem;
+    /* margin-bottom: .5rem; */
+}
+
+@media screen and (min-width:0) {
+    .menu__logo{
+        flex-direction: row;
+        
+
+        & .menu__logo_logo{ 
+            height: 3rem;
+            width: 3rem;
+        }
+
+        & .menu__logo_leyenda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 70%;
+        }
+
+        & .menu__logo_leyenda_text{
+            display: flex;
+            font-size: .5rem;
+            flex-direction: column;
+        }
+    }
+}
+@media screen and (min-width:410px) {
+    .menu__logo{
+        flex-direction: row;
+        
+
+        & .menu__logo_logo{ 
+            height: 4rem;
+            width: 4rem;
+        }
+
+        & .menu__logo_leyenda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 98%;
+        }
+
+        & .menu__logo_leyenda_text{
+            display: flex;
+            font-size: .8735rem;
+            flex-direction: column;
+        }
+    }
 }
