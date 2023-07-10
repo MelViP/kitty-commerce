@@ -57,6 +57,10 @@
         &:nth-last-child(-n+2) {
             display: none;
         }
+
+        & .galeria__productos__textCard{
+            font-size: .8375rem;
+        }
     }
 }
 
@@ -79,7 +83,7 @@
 
 @media screen and (min-width:1024px) {
     .galeria__productos_items{
-        width: calc((100% / 6) - 2rem);
+        width: calc((100% / 6) - 1.735rem);
         
         &:nth-last-child(-n+2) {
         display: flex;
