@@ -2,14 +2,11 @@
     background: url(/assets/cats__stores.jpg);
     background-size: cover;
     background-attachment: fixed;
-    /* padding: 10rem 0 3rem 0; */
     box-shadow: inset 0 0 25px #1b1919;
 
     & .banner__box{
         display: flex;
         flex-direction: column;
-        /* gap: 1.5rem;
-        padding: 1rem 6rem; */
         text-shadow: 1px 3px 15px black;
     }
 }
@@ -38,4 +35,23 @@
         margin-bottom: 1.75rem;
     }
 }
+@media screen and (min-width:1024px) {
+    .banner{
+        padding: 10rem 3.35rem 3rem;
+        background-position: right, bottom;
 
+        & .banner__box{
+            gap: 1.5rem;
+        }
+    }
+}
+@media screen and (min-width:1224px) {
+    .banner{
+        padding: 14rem 3.35rem 5rem;
+        background-position: bottom;
+
+        & .banner__box{
+            gap: 1.5rem;
+        }
+    }
+}
