@@ -39,6 +39,15 @@
     font-weight: 700;
 }
 
+@media screen and (min-width:0) {
+    .destacado {
+        font-size: .8735rem;
+    }
+    .btn{
+        
+    }
+}
+
 /*botones general*/
 .btn{
     font-family: var(--text);
