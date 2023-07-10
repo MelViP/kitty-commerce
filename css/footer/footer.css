@@ -2,40 +2,47 @@
     display: flex;
     justify-content: space-around;
     background: url(/assets/PaperTexture.png);
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     box-shadow: outset 0 0 25px #1b19193d;
+
+    & .piePag__menu{
+        display: flex;
+        flex-direction: column;
+        /* gap: 1.5rem; */
+        background: url(/assets/leafCat.png) no-repeat center/contain;
+        background-position: left bottom;
+    }
+    & .contactUs{
+        display: flex;
+        flex-direction: column;
+        background: url(/assets/catnip.png) no-repeat center/contain;
+        /*background-position: left;*/
+        /* gap: 1rem;
+        margin-bottom: 2rem; */
+    }
 }
-.piePag__logo{
-    align-items: flex-end;
-}
-.piePag__logo_logo{
-    width: 16rem;
-    height: 16rem;
-}
-.piePag__logo_leyenda{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    align-items: center;
-    margin-bottom: 5.735rem;
-}
-.piePag__menu{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    background: url(/assets/leafCat.png) no-repeat center/contain;
-    background-position: left bottom;
-}
-.contactUs{
-    display: flex;
-    flex-direction: column;
-    background: url(/assets/catnip.png) no-repeat center/contain;
-    /*background-position: left;*/
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
+
 .rodapie{
     display: flex;
     justify-content: center;
     padding: 1rem 0;
+}
+
+@media screen and (min-width:0) {
+    .piePag{
+        padding: 1rem 3rem;
+        flex-direction: column;
+        text-align: center;
+    
+        & .piePag__menu{
+            gap: .8rem;
+            padding-bottom: 1rem;
+            background:none;
+            border-bottom: 2px dashed var(--fontDarkColor);
+        }
+        & .contactUs{
+            padding: 1rem 0 0 0;
+            gap: .8rem;
+        }
+    }
 }

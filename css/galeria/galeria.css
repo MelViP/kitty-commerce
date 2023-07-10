@@ -21,6 +21,7 @@
 
     .galeria{
         padding: 0;
+        padding-bottom: 1.5rem;
         gap: 3rem;
 
         & .galeria__productos{

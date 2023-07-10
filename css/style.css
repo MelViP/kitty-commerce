@@ -45,64 +45,80 @@
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }
-.btn:hover{
-    transform: scale(1.1);
-}
+
 
 /*areas de input texto*/
 .input{
     font-family: var(--text);
-    /* padding: 1rem 0 1rem 1rem; */
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
+
+    &:focus{
+        outline: none;
+    }
 }
-.input:focus{
-    outline: none;
-}
+
 /*logo*/
 .logoBox{
     display: flex;
     gap: 1rem;
-}
-.logoPic{
-    background: url(/assets/cat_banner) no-repeat;
-    background-size: contain;
-}
-.logoLeyenda{
-    font-weight: 500;
-    font-family: var(--titles);
-    text-transform: uppercase;
-}
-.logoText{
-    transition: all .2s;
-}
-.logoText:first-child:hover {
-    background: -webkit-linear-gradient(45deg, #e32c4a, purple);
-    background: linear-gradient(45deg, #e32c4a, purple);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
-.logoText:nth-child(2) {
-    background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
-    background: linear-gradient(45deg, #15d6eb, #1dca02);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+
+    & .logoPic{
+        background: url(/assets/cat_banner) no-repeat;
+        background-size: contain;
+    }
+    & .logoLeyenda{
+        font-weight: 500;
+        font-family: var(--titles);
+        text-transform: uppercase;
+    }
+    & .logoText{
+        transition: all .2s;
+    
+        &:first-child:hover {
+            background: -webkit-linear-gradient(45deg, #e32c4a, purple);
+            background: linear-gradient(45deg, #e32c4a, purple);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        &:nth-child(2) {
+            background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
+            background: linear-gradient(45deg, #15d6eb, #1dca02);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+    }
+
 }
 
+
+    /*input  padding: 1rem 0 1rem 1rem; */
 @media screen and (min-width:0) {
     .destacado {
         font-size: .8735rem;
+    }
+    .input{
+        font-size: .8rem;
+        padding: .3rem;
+    }
+    .btn{
+        font-size: .8rem;
     }
 }
 @media screen and (min-width:710px) {
     .input{
         padding: .735rem;
+        
     }
 }
 

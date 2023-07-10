@@ -1,24 +1,33 @@
 .form__title{
     font-weight: 600;
+
+    & span{
+        background-color: var(--backgroundLightBlue);
+    }
 }
-.form__title span{
-    background-color: var(--backgroundLightBlue);
-}
+
 
 .form__input,
 .form__textarea{
     background-color: #f0f8ffae;
     border-radius: 8px;
     box-shadow: 0px 0px 5px;
-}
-.form__input:hover,
-.form__textarea:hover{
+
+   &:hover,{
     box-shadow: 0px 0px 5px var(--neonGreen);
 }
+}
+
 .form__btn{
-    width: 50%;
-    border-radius: 3rem;
+    /* border-radius: 3rem; */
     background-color: var(--fondoTransparenteGreen);
     font-weight: 600;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
+}
+
+@media screen and (min-width:0) {
+    .form__btn{
+        border-radius: 1rem;
+        padding: .35rem;
+    }
 }
