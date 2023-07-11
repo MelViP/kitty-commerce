@@ -12,42 +12,39 @@
         background-color: rgba(240, 248, 255, 0.6);
         box-shadow: 6px 8px 18px var(--backgroundLightBlue);
     }
-}
-
-.galeria__productos_items__foto{
-    border-radius: 0 1rem 0 0;
-    width: 100%;
-}
-.galeria__productos__textCard{
-    margin: .5rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-}
-
-.galeria__productos_items__nombre
-.galeria__productos_items__precio
-
-.galeria__productos--link{
-    color: var(--fontDarkColor);
-    background-color: var(--backgroundLightBlue);
-    width: fit-content;
-    align-items: flex-end;
-}
-
-
-.galeria__productos--verTodo{
-    border: 2px solid transparent;
-    border-radius: .5rem;
-    background-color: rgba(240, 255, 255, 0.5);
-    transition: all .2s;
-
-    &:hover{
-        font-weight: 600;
+    & .galeria__productos_items__foto{
+        border-radius: 0 1rem 0 0;
+        width: 100%;
+    }
+    & .galeria__productos__textCard{
+        margin: .5rem;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    
+    .galeria__productos_items__nombre
+    .galeria__productos_items__precio
+    
+    & .galeria__productos--link{
+        color: var(--fontDarkColor);
+        background-color: var(--backgroundLightBlue);
+        width: fit-content;
+        align-items: flex-end;
+    }
+    
+    
+    & .galeria__productos--verTodo{
+        border: 2px solid transparent;
+        border-radius: .5rem;
+        background-color: rgba(240, 255, 255, 0.5);
+        transition: all .2s;
+    
+        &:hover{
+            font-weight: 600;
+        }
     }
 }
-
-
 
 @media screen and (min-width:0px) {
 
@@ -64,10 +61,10 @@
     }
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:410px) {
 
     .galeria__productos_items{
-        width: calc((100% / 2) - 5.3rem);
+        width: calc((100% / 2) - 3rem);
     }
 
 }
@@ -87,6 +84,10 @@
         
         &:nth-last-child(-n+2) {
         display: flex;
+        }
+
+        & .galeria__productos__textCard{
+            font-size: 1rem;
         }
     }
 }
