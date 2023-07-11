@@ -1,9 +1,8 @@
 .loginForm{
     display: flex;
-    flex-direction: row-reverse;
-    padding: 2.735rem;
-    gap: 7.375rem;
-    align-items: center;
+    /* flex-direction: row-reverse; */
+    /* padding: 2.735rem;
+    gap: 7.375rem; */
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
     box-shadow: 5px 5px 10px #fbf8dfd7, -5px -5px 10px #fbf8dfd7;
@@ -15,8 +14,9 @@
     
 }
 .catLogo{
-    height: auto;
-    width: 28rem;
+    display: none;
+    /* height: auto; */
+    /* width: 28rem; */
     border-radius: 1.735rem;
     opacity: 0.8;
     transition: all .3s;
@@ -25,68 +25,31 @@
         opacity: 1;
     }
 }
-
-.form__izq{
+.catLogo2{
+    display: none;
+    border-radius: 100%;
+    box-shadow: 2px 2px black;
+    height: auto;
+}
+form{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-
-    & .form__title{
-        text-transform: uppercase;
-        font-family: var(--starTitle);
-        font-size: larger;
-        letter-spacing: .2375rem;
-        /* margin-bottom: 1rem; */
-    }
 }
 
 @media screen and (min-width:0) and (max-width:414px) {
     .loginForm{
         flex-direction: column;
+        align-items: center;
         padding: 1.5rem 1rem;
         gap: 1rem;
-        border-radius: 3rem;
-        width: calc((100% - 20%) - 1rem);    
-    }
-    .catLogo{
-        display: none; 
+        /* border-radius: 3rem; */
+        /* width: calc((100% - 20%) - 1rem); */
     }
     .catLogo2{
-        height: auto;
-        width: calc((100% - 43%) - 1rem);
-        border-radius: 100%;
-    }
-    .form__izq{
         display: flex;
-        align-items: center;
-        & .form__title{
-            letter-spacing: .2375rem;
-            text-align: center;
-        }
+        width: calc((100% - 43%) - 1rem)
     }
-}
-@media screen and (min-width:415px) and (max-width:760px) {
-    .loginForm{
-        flex-direction: column;
-        padding: 2rem;
-        gap: 1rem;
-        border-radius: 3rem;        
-    }
-    .catLogo{
-        display: none;
-        
-    }
-    .catLogo2{
-        height: auto;
-        width: calc((100% - 43%) - 1rem);
-        border-radius: 100%;
-    }
-    .form__izq{
-        align-items: center;
-        & .form__title{
-            letter-spacing: .2375rem;
-            font-size: 1rem;
-
-        }
+    form{
+        box-sizing: inherit;
     }
 }

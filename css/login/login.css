@@ -1,11 +1,11 @@
 body{
-    background: url(/assets/cats__stores.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background: url(/assets/cats__stores.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
     font-family: var(--titles);
 }
 .home{
@@ -14,15 +14,13 @@ body{
     text-shadow: 2px 2px 8px black;
 }
 main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     padding: 1rem;
 }
 input{
     border: 2px solid transparent;
     background-color: transparent;
-    padding: .735rem;
+    min-width: 50%;
 
     &:focus{
         outline: none;
@@ -32,8 +30,16 @@ input{
 
 .rodapie{
     font-family: var(--credits);
-    /* margin-top: auto; */
+    margin-top: auto;
     align-items: center;
     background-color: var(--backLightBlueTransparent);
+}
 
+@media screen and (min-width:0) and (max-width:414px) {
+    input{
+        padding: 0;
+    }
+    .rodapie{
+        font-size: .7rem;
+    }
 }

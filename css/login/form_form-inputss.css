@@ -1,0 +1,30 @@
+li.inputUsername,
+li.inputPassword {
+        display: flex;
+        align-items: center;
+        background: var(--backLightBlueTransparent);
+
+        & input.formInput {
+                min-width: calc(100% - 60px);
+        }
+}
+
+span.material-symbols-rounded {
+        margin: .3rem;
+}
+
+
+@media screen and (min-width:0) and (max-width:414px) {
+        span.material-symbols-rounded {
+                font-size: 1rem;
+        }
+
+        li {
+                border-radius: .8rem;
+        }
+
+        li.inputUsername,
+        li.inputPassword {
+                /* width: calc(100% - 60px);*/
+        }
+}
