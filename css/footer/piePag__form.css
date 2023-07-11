@@ -10,12 +10,11 @@
 .form__input,
 .form__textarea{
     background-color: #f0f8ffae;
-    border-radius: 8px;
-    box-shadow: 0px 0px 5px;
+    border-radius: .2rem .8rem .2rem;    box-shadow: 0px 0px 5px;
 
-   &:hover,{
+    &:hover{
     box-shadow: 0px 0px 5px var(--neonGreen);
-}
+    }
 }
 
 .form__btn{
@@ -30,4 +29,43 @@
         border-radius: 1rem;
         padding: .35rem;
     }
+}
+@media screen and (min-width:410px) {
+    .form__btn{
+        border-radius: 1rem;
+        padding: .35rem;
+    }
+    .form__title{
+        & span{
+        font-size: 1rem;
+        }
+    }
+
+}
+@media screen and (min-width:710px) {
+    .form__btn{
+        padding: .35rem;
+    }
+    .form__title{
+        & span{
+        font-size: 1rem;
+        }
+    }
+
+}
+@media screen and (min-width:1024px) {
+    .form__btn{
+        border-radius: 1.85rem;
+        padding: .875rem;
+    }
+    .form__title{
+        & span{
+        font-size: 1.25rem;
+        }
+    }
+    .form__input,
+    .form__textarea{
+        padding: .85rem;
+    }
+
 }

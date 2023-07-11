@@ -102,23 +102,4 @@
 }
 
 
-    /*input  padding: 1rem 0 1rem 1rem; */
-@media screen and (min-width:0) {
-    .destacado {
-        font-size: .8735rem;
-    }
-    .input{
-        font-size: .8rem;
-        padding: .3rem;
-    }
-    .btn{
-        font-size: .8rem;
-    }
-}
-@media screen and (min-width:710px) {
-    .input{
-        padding: .735rem;
-        
-    }
-}
 
