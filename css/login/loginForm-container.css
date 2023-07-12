@@ -1,6 +1,8 @@
 .loginForm{
+    flex-grow: 1;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     padding: 2.735rem;
     /* gap: 7.375rem; */
     border-radius: 2.375rem;
@@ -59,7 +61,7 @@ form{
     }
     .catLogo2{
         display: flex;
-        width: calc((100% - 43%) - 1rem);
+        width: 65%;
     }
     form{
         box-sizing: inherit;

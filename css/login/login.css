@@ -1,5 +1,6 @@
 body{
-    
+    margin: 0;
+    display: block;
     background: url(/assets/cats__stores.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,11 +12,13 @@ body{
     text-shadow: 2px 2px 8px black;
 }
 main{
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
+    height: 100vh;
+    width: 100%;
+    /* justify-content: space-between; */
+    margin: 0;
+    overflow-y: hidden;
 }
 input{
     border: 2px solid transparent;
