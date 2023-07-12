@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row-reverse;
     padding: 2.735rem;
-    gap: 7.375rem;
+    /* gap: 7.375rem; */
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
     box-shadow: 5px 5px 10px #fbf8dfd7, -5px -5px 10px #fbf8dfd7;
@@ -26,7 +26,8 @@
     }
 }
 .catLogo2{
-    display: none;border-radius: 100%;
+    display: none;
+    border-radius: 31% 69% 57% 43% / 44% 27% 73% 56% ;
     box-shadow: 2px 2px black;
     height: auto;
 }
@@ -38,6 +39,9 @@
     display: none;
     box-shadow: 6px 6px #ffc0cbc8, -6px -6px #0000ff8b;
 }
+.catLogo5{
+    display: none;
+}
 form{
     display: flex;
     flex-direction: column;
@@ -48,7 +52,7 @@ form{
         flex-direction: column;
         align-items: center;
         padding: 1.5rem 1rem;
-        gap: 1rem;
+        gap: 1.5rem;
         margin: 1.5rem 1rem;
         /* border-radius: 3rem; */
         /* width: calc((100% - 20%) - 1rem); */
@@ -65,10 +69,13 @@ form{
     .loginForm{
         flex-direction: column;
         align-items: center;
+        margin: 2rem;
     }
     .catLogo3{
         display: flex;
-        border-radius: 100%;
+        box-shadow: inset 18px 18px 36px #664d4d,
+            inset -18px -18px 36px #ffe6e6;
+        border-radius: 31% 69% 20% 80% / 31% 46% 54% 69% ;
         margin: 1rem 0;
     }
     form{
@@ -78,15 +85,37 @@ form{
 @media screen and (min-width:769px) and (max-width:1024px) {
     .loginForm{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 2rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.735rem;
+        margin: 2.735rem;
     }
     .catLogo4{
         display: flex;
-        width: 40%;
+        width: 58%;
         height: 40%;
-        border-radius: 2.5rem 6rem;
+        border-radius: 1% 99% 32% 68% / 42% 46% 54% 58% ;
+        margin: 3rem 0 0;
+    }
+    form{
+        justify-content: center;
+    }
+}
+@media screen and (min-width:1025px) /*and (max-width:1024px)*/ {
+    .loginForm{
+        flex-direction: row;
+
+        gap: 2.735rem;
+        margin: 2.735rem;
+    }
+    .catLogo5{
+        display: flex;
+        width: 45%;
+        height: 25%;
+        border-radius: 39% 61% 86% 14% / 57% 79% 21% 43% ;
+        margin: 3rem 0 0;
+        box-shadow: outset 18px 18px 36px #664d4d,
+            outset -18px -18px 36px #ffe6e6;
     }
     form{
         justify-content: center;

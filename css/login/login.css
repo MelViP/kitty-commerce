@@ -1,4 +1,5 @@
 body{
+    
     background: url(/assets/cats__stores.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,14 +11,16 @@ body{
     text-shadow: 2px 2px 8px black;
 }
 main{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 input{
     border: 2px solid transparent;
     background-color: transparent;
-    min-width: 50%;
+    /* min-width: 50%; */
 
     &:focus{
         outline: none;
@@ -40,6 +43,9 @@ input{
         font-size: .7rem;
     }
 }
-@media sreen and (min-width:760px){
-   
+@media sreen and (min-width:769px) and (max-width:1024px){
+    body{
+        display: flex;}
+        main{
+            flex-grow: 1;}
 }
