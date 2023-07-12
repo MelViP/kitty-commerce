@@ -6,6 +6,10 @@ li.inputPassword {
 
         & input.formInput {
                 min-width: calc(100% - 60px);
+
+                &::placeholder{
+                        font-size: inherit;
+                }
         }
 }
 
@@ -14,7 +18,7 @@ span.material-symbols-rounded {
 }
 
 
-@media screen and (min-width:0) and (max-width:414px) {
+@media screen and (min-width:0) and (max-width:415px) {
         span.material-symbols-rounded {
                 font-size: 1rem;
         }
@@ -28,3 +32,11 @@ span.material-symbols-rounded {
                 /* width: calc(100% - 60px);*/
         }
 }
+@media screen and (min-width:416px) and (max-width:768px){
+        li.inputUsername,
+        li.inputPassword{
+                border-radius: 15px;
+        }
+
+}
+@media screen and (min-width:769px) and (max-width:1024px) {}

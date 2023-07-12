@@ -1,8 +1,8 @@
 .loginForm{
     display: flex;
-    /* flex-direction: row-reverse; */
-    /* padding: 2.735rem;
-    gap: 7.375rem; */
+    flex-direction: row-reverse;
+    padding: 2.735rem;
+    gap: 7.375rem;
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
     box-shadow: 5px 5px 10px #fbf8dfd7, -5px -5px 10px #fbf8dfd7;
@@ -26,30 +26,69 @@
     }
 }
 .catLogo2{
-    display: none;
-    border-radius: 100%;
+    display: none;border-radius: 100%;
     box-shadow: 2px 2px black;
     height: auto;
+}
+.catLogo3{
+    display: none;
+    width: calc((100% - 43%) - 1rem);
+}
+.catLogo4{
+    display: none;
+    box-shadow: 6px 6px #ffc0cbc8, -6px -6px #0000ff8b;
 }
 form{
     display: flex;
     flex-direction: column;
 }
 
-@media screen and (min-width:0) and (max-width:414px) {
+@media screen and (min-width:0) and (max-width:415px) {
     .loginForm{
         flex-direction: column;
         align-items: center;
         padding: 1.5rem 1rem;
         gap: 1rem;
+        margin: 1.5rem 1rem;
         /* border-radius: 3rem; */
         /* width: calc((100% - 20%) - 1rem); */
     }
     .catLogo2{
         display: flex;
-        width: calc((100% - 43%) - 1rem)
+        width: calc((100% - 43%) - 1rem);
     }
     form{
         box-sizing: inherit;
+    }
+}
+@media screen and (min-width:416px) and (max-width:768px) {
+    .loginForm{
+        flex-direction: column;
+        align-items: center;
+    }
+    .catLogo3{
+        display: flex;
+        border-radius: 100%;
+        margin: 1rem 0;
+    }
+    form{
+        padding: 1rem 0 2rem;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .loginForm{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem;
+    }
+    .catLogo4{
+        display: flex;
+        width: 40%;
+        height: 40%;
+        border-radius: 2.5rem 6rem;
+    }
+    form{
+        justify-content: center;
     }
 }

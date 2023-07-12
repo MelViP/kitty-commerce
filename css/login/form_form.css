@@ -15,6 +15,7 @@ nav.inputs {
 ul.form_inputs{
     display: flex;
     flex-direction: column;
+    gap: .8rem;
 }
 
 a.entrar {
@@ -29,7 +30,7 @@ a.entrar {
 
 
 
-@media screen and (min-width:0) and (max-width:414px) {
+@media screen and (min-width:0) and (max-width:415px) {
     nav.inputs {
         gap: 1rem;
     
@@ -53,3 +54,21 @@ a.entrar {
     }
 
 }
+@media screen and (min-width:416px) and (max-width:768px){
+    nav.inputs {
+        gap: 1rem;
+    
+        & h2.form__title {
+           font-size: 1.5rem;
+           letter-spacing: .25rem;
+        }
+        & p.directions{
+            font-size: 1.1rem;
+        }
+    }
+    a.entrar{
+        padding: .3rem 0;
+        width: calc(100% - 63px);
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {}

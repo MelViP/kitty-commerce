@@ -1,8 +1,4 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
     background: url(/assets/cats__stores.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,8 +10,9 @@ body{
     text-shadow: 2px 2px 8px black;
 }
 main{
-
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 input{
     border: 2px solid transparent;
@@ -42,4 +39,7 @@ input{
     .rodapie{
         font-size: .7rem;
     }
+}
+@media sreen and (min-width:760px){
+   
 }
