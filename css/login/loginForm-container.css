@@ -2,8 +2,10 @@
     flex-grow: 1;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center;
-    padding: 2.735rem;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 5.75rem;
+    /* padding: calc(3.735rem - 10vw); */
     /* gap: 7.375rem; */
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
@@ -15,111 +17,51 @@
     }
     
 }
-.catLogo{
-    display: none;
-    /* height: auto; */
-    /* width: 28rem; */
-    border-radius: 1.735rem;
-    opacity: 0.8;
-    transition: all .3s;
-
-    &:hover{
-        opacity: 1;
-    }
-}
-.catLogo2{
-    display: none;
-    border-radius: 31% 69% 57% 43% / 44% 27% 73% 56% ;
-    box-shadow: 2px 2px black;
-    height: auto;
-}
-.catLogo3{
-    display: none;
-    width: calc((100% - 43%) - 1rem);
-}
-.catLogo4{
-    display: none;
-    box-shadow: 6px 6px #ffc0cbc8, -6px -6px #0000ff8b;
-}
-.catLogo5{
-    display: none;
-}
 form{
     display: flex;
     flex-direction: column;
 }
 
-@media screen and (min-width:0) and (max-width:415px) {
+
+
+
+/*responsive*/
+
+
+
+
+@media screen and (min-width:0) and (max-width:413px) {
     .loginForm{
         flex-direction: column;
-        align-items: center;
-        padding: 1.5rem 1rem;
         gap: 1.5rem;
-        margin: 1.5rem 1rem;
+        margin: 2rem 1rem;
+        padding: 1rem;
         /* border-radius: 3rem; */
         /* width: calc((100% - 20%) - 1rem); */
     }
-    .catLogo2{
-        display: flex;
-        width: 65%;
-    }
-    form{
-        box-sizing: inherit;
-    }
 }
-@media screen and (min-width:416px) and (max-width:768px) {
+@media screen and (min-width:414px) and (max-width:767px) {
     .loginForm{
         flex-direction: column;
-        align-items: center;
-        margin: 2rem;
-    }
-    .catLogo3{
-        display: flex;
-        box-shadow: inset 18px 18px 36px #664d4d,
-            inset -18px -18px 36px #ffe6e6;
-        border-radius: 31% 69% 20% 80% / 31% 46% 54% 69% ;
-        margin: 1rem 0;
-    }
-    form{
-        padding: 1rem 0 2rem;
+        margin: 2.75rem;
+        padding: 2rem;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1023px) {
     .loginForm{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 2.735rem;
-        margin: 2.735rem;
+        /* gap: 2.735rem; */
+        margin: 8rem 2.735rem;
+        padding: 2.735rem;
     }
-    .catLogo4{
-        display: flex;
-        width: 58%;
-        height: 40%;
-        border-radius: 1% 99% 32% 68% / 42% 46% 54% 58% ;
-        margin: 3rem 0 0;
-    }
-    form{
-        justify-content: center;
-    }
+
 }
-@media screen and (min-width:1025px) /*and (max-width:1024px)*/ {
+@media screen and (min-width:1024px) and (max-width:1279px) {
     .loginForm{
         flex-direction: row;
-
-        gap: 2.735rem;
-        margin: 2.735rem;
-    }
-    .catLogo5{
-        display: flex;
-        width: 45%;
-        height: 25%;
-        border-radius: 39% 61% 86% 14% / 57% 79% 21% 43% ;
-        margin: 3rem 0 0;
-        box-shadow: outset 18px 18px 36px #664d4d,
-            outset -18px -18px 36px #ffe6e6;
-    }
-    form{
-        justify-content: center;
+        /* padding: calc(2rem - 1vw); */
+        align-items: center;
+        margin: calc(6rem - 1vw);
     }
 }

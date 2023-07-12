@@ -1,0 +1,79 @@
+.catLogo{
+    display: none;
+    height: auto;
+    align-self: center;
+}
+.catLogo.mobile1{
+    display: none;
+
+    border-radius: 31% 69% 57% 43% / 44% 27% 73% 56% ;
+    box-shadow: 2px 2px black;
+}
+.catLogo.mobile2{
+    display: none;
+
+    box-shadow: inset 18px 18px 36px #664d4d,
+        inset -18px -18px 36px #ffe6e6;
+    border-radius: 31% 69% 20% 80% / 31% 46% 54% 69% ;
+}
+.catLogo.tablet{
+    display: none;
+
+    border-radius: 1% 99% 32% 68% / 42% 46% 54% 58% ;
+    box-shadow: 6px 6px #ffc0cbc8, -6px -6px #0000ff8b;
+}
+.catLogo.desktop1{
+    display: none;
+
+    border-radius: 15% 85% 73% 27% / 15% 46% 54% 85% ;
+    opacity: 0.8;
+    transition: all .3s;
+
+    &:hover{
+        opacity: 1;
+    }
+}
+.catLogo.desktop2{
+    display: none;
+
+    border-radius: 39% 61% 86% 14% / 57% 79% 21% 43% ;
+    box-shadow: outset 18px 18px 36px #664d4d,
+    outset -18px -18px 36px #ffe6e6;
+}
+
+
+
+/*responsive*/
+
+
+@media screen and (min-width:0) and (max-width:413px) {
+    .catLogo.mobile1{
+        display: flex;
+        width: calc((70% - 50px) - 1.5rem);
+    }
+}
+@media screen and (min-width:414px) and (max-width:709px) {
+    .catLogo.mobile2{
+        display: flex;
+        width: calc((100% - 12px) - 2rem);
+    }
+}
+@media screen and (min-width:710px) and (max-width:1023px) {
+    .catLogo.tablet{
+        display: flex;
+        width: calc((64% - 28px) - 2.735rem);
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .catLogo.desktop2{
+        display: flex;
+        width: calc(36% - 2vw);
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 1228px) {
+    .catLogo.catLogo.desktop1{
+        display: flex;
+        width: calc(36% - 2vw);
+    }
+}

@@ -1,121 +1,91 @@
-nav.inputs {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 
     & h2.form__title {
         letter-spacing: .25rem;
         font-family: var(--starTitle);
+        /* font-size: calc(1.375rem + 1.5vw); */
+        text-align: center;
     }
-    & p.directions{
+
+    & p.directions {
         font-family: var(--titles);
         word-wrap: break-word;
+        /* font-size: calc(1rem + 1.5vw); */
     }
 }
 
-ul.form_inputs{
+ul.form_inputs {
     display: flex;
     flex-direction: column;
-    gap: .8rem;
-}
-
-a.entrar {
-    display: flex;
-    justify-content: center;
-    color: var(--fontDarkColor);
-    font-weight: 600;
-    background-color: var(--darkBlue);
-    border-radius: 1rem;
-    /* padding: .5rem; */
+    gap: 1rem;
+    width: 100%;
 }
 
 
 
-@media screen and (min-width:0) and (max-width:415px) {
-    nav.inputs {
-        gap: 1rem;
-    
-        & h2.form__title {
-            letter-spacing: .2rem;
-            font-size: 1rem;
-        }
-        & p.directions{
-            font-size: 1rem;
-            text-align: center;
-            font-weight: 500;
-        }
-    }
-    ul.form_inputs{
-        gap: .5rem;
-        width: calc(100% - 60px);
-    }
-    a.entrar{
-        padding: .3rem 0;
-        width: calc(100% - 60px);
+
+/*responsive*/  
+
+
+
+
+@media screen and (min-width:0) and (max-width:413px) {
+    h2.form__title {
+        letter-spacing: .2rem;
+        font-size: calc(1.375rem - 1vw);
     }
 
-}
-@media screen and (min-width:416px) and (max-width:768px){
-    nav.inputs {
-        gap: 1rem;
-    
-        & h2.form__title {
-           font-size: 1.5rem;
-        }
-        & p.directions{
-            font-size: 1.1rem;
-        }
+    p.directions {
+        font-size: calc(1rem + .5vw);
+        text-align: center;
+        font-weight: 500;
+        margin: 0 1rem;
     }
-    a.entrar{
-        padding: .3rem 0;
-        width: calc(100% - 63px);
-    }
-}
-@media screen and (min-width:769px) and (max-width:1024px) {
-    nav.inputs {
-        gap: 1.75rem;
-    
-        & h2.form__title {
-            font-size: 2rem;
-        }
-        & p.directions{
-            font-size: 1.75rem;
-        }
-    }
-    ul.form_inputs{
-        gap: 1.75rem;
+
+    ul.form_inputs {
+        gap: 0.8rem;
         width: 100%;
-        
-    }
-    a.entrar {
-        font-size: 1.35rem;
-        padding: 1rem 0;
-        border-radius: 5rem;
-        width: 100%;
-        text-shadow: 0px 0px white
     }
 }
-@media screen and (min-width:1025px) /*and (max-width:1024px)*/ { 
-    nav.inputs {
-        gap: 1rem;
+
+@media screen and (min-width:414px) and (max-width:709px) {
+    h2.form__title {
+        font-size: calc(1.375rem - .5vw);
+    }
+
+    p.directions {
+        font-size: calc(1rem - .2vw);
+    }
+}
+
+@media screen and (min-width:710px) and (max-width:1023px) {
+    ul.form__inputs{
+        margin-top: 2rem;
+    }
+    h2.form__title {
+        font-size: calc(1.375rem + .5vw);
+    }
+
+    p.directions {
+        font-size: calc(1rem + 1.5vw);
+    }
     
-        & h2.form__title {
-            font-size: 1.75rem;
-        }
-        & p.directions{
-            font-size: 1.55rem;
-        }
+}
+@media screen and (min-width:1024px) {
+    h2.form__title {
+        font-size: calc(1.375rem + .1vw);
     }
-    ul.form_inputs{
-        gap: 1rem;
-        width: 100%;
-        
+
+    p.directions {
+        font-size: calc(1rem + .3vw);
     }
-    a.entrar {
-        font-size: 1.15rem;
-        padding: .8rem 0;
-        border-radius: 5rem;
-        width: 100%;
-        text-shadow: 0px 0px white
+}
+@media screen and (min-width: 1280px) {
+    form{
+        justify-content: center;
     }
 }

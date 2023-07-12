@@ -37,18 +37,3 @@ input{
     align-items: center;
     background-color: var(--backLightBlueTransparent);
 }
-
-@media screen and (min-width:0) and (max-width:414px) {
-    input{
-        padding: 0;
-    }
-    .rodapie{
-        font-size: .7rem;
-    }
-}
-@media sreen and (min-width:769px) and (max-width:1024px){
-    body{
-        display: flex;}
-        main{
-            flex-grow: 1;}
-}
