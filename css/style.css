@@ -3,7 +3,7 @@
     --darkBlue: #2a7be4ad;
 
     --backgroundWhite: #FFFFFF;
-    --backgroundDirt: #dd914549;
+    --backgroundDirt: #dd914536;
     --backgroundLightBlue: #EAF2FD;
     --backLightBlueTransparent:#eaf2fd9e ;
     --niceGreen: #dafccc68;
@@ -25,6 +25,7 @@
 .whole{
     background: url(/assets/trianglify-lowres.png) repeat;
     background-size: contain;
+    background-color: var(--backgroundDirt);
 }
   
 /*titulos grandes*/
