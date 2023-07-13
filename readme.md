@@ -26,4 +26,4 @@ Currently in progress
 
 ## Badges
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1794cc6c-2102-4e11-a442-f049703ae0dd/deploy-status)](https://app.netlify.com/sites/kitty-commerce/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ff114c84-41dc-4782-bfd5-c39cd12bacfc/deploy-status)](https://app.netlify.com/sites/kitty-commerce/deploys)
