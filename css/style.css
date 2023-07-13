@@ -5,7 +5,7 @@
     --backgroundWhite: #FFFFFF;
     --backgroundDirt: #dd914549;
     --backgroundLightBlue: #EAF2FD;
-    --backLightBlueTransparent:#eaf2fda6 ;
+    --backLightBlueTransparent:#eaf2fd9e ;
     --niceGreen: #dafccc68;
     --neonGreen: #39FF14;
     --fondoTransparenteGreen: #37ff1469;
@@ -23,7 +23,8 @@
     src: url(/assets/Minecraft.ttf);
 }
 .whole{
-    background: var(--backgroundDirt);
+    background: url(/assets/trianglify-lowres.png) repeat;
+    background-size: contain;
 }
   
 /*titulos grandes*/
