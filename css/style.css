@@ -23,8 +23,8 @@
     src: url(/assets/Minecraft.ttf);
 }
 .whole{
-    background: url(/assets/trianglify-lowres.png) repeat;
-    background-size: contain;
+    /* background: url(/assets/trianglify-lowres.png) repeat;
+    background-size: contain; */
     background-color: var(--backgroundDirt);
 }
   
