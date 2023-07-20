@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iKitty</title>
+
+    <!--Styles sheets-->
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="./css/header/topMenu__logo.css" />
+
+    <link rel="stylesheet" href="./css/header/topMenu.css" />
+    <link rel="stylesheet" href="./css/header/topMenu__busqueda.css" />
+
+    <link rel="stylesheet" href="./css/adminMenu/form.css" />
+
+    <link rel="stylesheet" href="./css/footer/footer.css" />
+    <link rel="stylesheet" href="./css/footer/footerLogo.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__menu.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__form.css" />
+  </head>
+
+  <body>
+    <main class="whole">
+      <header class="menu">
+        <div class="menu__menu">
+          <section class="menu__logo logoBox">
+            <a href="./index.html">
+              <div
+                class="menu__logo_logo logoPic"
+                alt="Logo PixelKitty Store"
+              ></div>
+            </a>
+            <p class="menu__logo_leyenda logoLeyenda">
+              <span class="menu__logo_leyenda_text logoText">Pixel</span>
+              <span class="menu__logo_leyenda_text logoText">Kitty</span>
+              <span class="menu__logo_leyenda_text logoText">Store</span>
+            </p>
+          </section>
+          <section class="menu__busqueda">
+            <input
+              type="text"
+              class="menu__barraBusqueda input"
+              placeholder="¿Que deseas buscar?"
+            />
+            <button class="menu__btn_busqueda btn">🔎</button>
+          </section>
+        </div>
+        <button class="menu__btn_login btn">
+          <a class="menu__btn_login__text" href="./login.html">Menún admin ⇢ </a
+          ><i></i>
+        </button>
+      </header>
+
+      <form class="add_product" action="form">
+        <fieldset>
+          <h1>Agregar nuevo producto</h1>
+          <input type="text" placeholder="URL de imagen" />
+          <input type="text" placeholder="Categoría" />
+          <input type="text" placeholder="Nombre de producto" />
+          <input type="text" placeholder="Precio del producto" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripción del producto"
+          ></textarea>
+          <button class="add_product">Agregar producto</button>
+        </fieldset>
+      </form>
+
+      <footer class="piePag">
+        <section class="piePag__logo logoBox">
+          <img
+            class="piePag__logo_logo"
+            alt="Logo PixelKitty Store"
+            src="./assets/cat_banner"
+          />
+          <p class="piePag__logo_leyenda logoLeyenda">
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Pixel</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Kitty</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Store</span
+            >
+          </p>
+        </section>
+
+        <nav class="piePag__menu">
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Política de Privacidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Programa de fidelidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Nuestras tiendas </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quiero ser franquiciado </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"><span> Anúncie aquí </span></a>
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quienes somos </span></a
+            >
+          </li>
+        </nav>
+        <form class="contactUs">
+          <p class="form__title destacado"><span>Hable con nosotros</span></p>
+          <input
+            type="text"
+            class="form__input input"
+            placeholder="Nombre"
+            required
+          />
+          <textarea
+            class="form__textarea input"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="Escribe tu mensaje"
+            required
+          ></textarea>
+          <button class="form__btn btn"><span>Enviar</span><i></i></button>
+        </form>
+      </footer>
+    </main>
+    <div class="rodapie">
+      <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
+    </div>
+  </body>
+</html>
