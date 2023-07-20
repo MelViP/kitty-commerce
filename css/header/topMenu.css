@@ -1,9 +1,11 @@
 .menu{
-    /* position: fixed; */
-    /* top: 0%; */
+    position: fixed;
+    top: 0%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--backgroundDirt);
+    background-color: red;
+    width: 93%;
+    z-index: 1;
 
     & .menu__menu{
         display: flex;
