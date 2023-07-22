@@ -1,31 +1,36 @@
 :root{
     --fontDarkColor: #464646;
     --darkBlue: #2a7be4ad;
-
+    --backgroundDark: rgb(5, 23, 0);;
     --backgroundWhite: #FFFFFF;
     --backgroundDirt: #dd914536;
     --backgroundLightBlue: #EAF2FD;
     --backLightBlueTransparent:#eaf2fd9e ;
-    --niceGreen: #dafccc68;
-    --neonGreen: #39FF14;
+    --niceGreen: #dafcccc4;
+    --neonGreen: #37ff14da;
     --fondoTransparenteGreen: #37ff1469;
     --starTitle: 'Minecraft Evenings';
-    --titles: 'Press Start 2P', cursive;
-    --text: 'M PLUS Code Latin', sans-serif;
+    --logoFont: 'Mf The Curious Cat';
+    --text: 'SimpleCat';
     --credits: 'Valorax';
 }
 @font-face {
     font-family: 'Valorax';
-    src: url(/assets/Valorax.otf);
+    src: url(/assets/fonts/Valorax.otf);
 }
 @font-face {
-    font-family: 'Minecraft Evenings';
-    src: url(/assets/Minecraft.ttf);
+    font-family: 'Mf The Curious Cat';
+    src: url(/assets/fonts/MfTheCuriousCat-eY56.ttf);
+}
+@font-face {
+    font-family: 'SimpleCat';
+    src: url(/assets/fonts/Simplecat-d9xpV.otf);
 }
 .whole{
-    /* background: url(/assets/trianglify-lowres.png) repeat;
-    background-size: contain; */
+    background: url(/assets/PaperTexture.png) repeat;
+    background-size: contain;
     background-color: var(--backgroundDirt);
+    /* font-weight: 700; */
 }
   
 /*titulos grandes*/
@@ -47,6 +52,7 @@
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
+    cursor: pointer;
 
     &:hover{
         transform: scale(1.1);
@@ -72,13 +78,22 @@
     gap: 1rem;
 
     & .logoPic{
-        background: url(/assets/cat_banner) no-repeat;
-        background-size: contain;
+        /* background: url(/assets/logoCat.png) no-repeat; */
+        /* background-size: contain; */
+        -webkit-filter: drop-shadow(3px 3px 2px var(--neonGreen));
+    filter: drop-shadow(5px 5px 1px var(--neonGreen));
     }
     & .logoLeyenda{
         font-weight: 500;
-        font-family: var(--titles);
+        font-family: var(--logoFont);
         text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .2rem;
+        color: var(--backgroundLightBlue);
+
+        &:hover{
+            cursor: crosshair;
+        }
     }
     & .logoText{
         transition: all .2s;

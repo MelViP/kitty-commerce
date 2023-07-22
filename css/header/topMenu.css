@@ -3,9 +3,10 @@
     top: 0%;
     display: flex;
     justify-content: space-between;
-    background-color: red;
+    background-color: var(--backgroundDark);
     width: 93%;
     z-index: 1;
+    padding-bottom: .5rem;
 
     & .menu__menu{
         display: flex;
@@ -14,7 +15,7 @@
 
     & .menu__btn_login{
         border: 2px solid transparent;
-        background: linear-gradient(48deg, rgba(227, 43, 74, 0.2), rgba(128, 0, 128, 0.2));
+        background: linear-gradient(48deg, rgba(227, 43, 74, 0.477), rgba(128, 0, 128, 0.477));
     }
 
     & .menu__btn_login__text{
