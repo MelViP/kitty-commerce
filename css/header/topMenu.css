@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--backgroundDirt);
-    width: 93%;
+    width: 100vw;
     z-index: 1;
     padding-bottom: .5rem;
 
@@ -53,6 +53,7 @@
             align-items: center;
         }
         & .menu__btn_login{
+            margin-right: 14vw;
             border-radius: 2rem;
             padding: .8735rem;
         }
@@ -64,6 +65,8 @@
 @media screen and (min-width:710px) {
     .menu{
         padding: 1rem 3.735rem;
+        & .menu__btn_login{
+            margin-right: 15.75vw;}
     }
 }
 @media screen and (min-width:1024px) {
@@ -86,6 +89,7 @@
             border-radius: 4rem;
             padding: 1rem; 
             width: 8.735rem;
+            margin-right: 8.75vw;
         }
     
     }
