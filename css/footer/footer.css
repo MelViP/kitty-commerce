@@ -1,6 +1,6 @@
 .piePag {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background: var(--backgroundDark);
     box-shadow: outset 0 0 25px #1b19193d;
 
@@ -34,6 +34,7 @@
         text-align: center;
 
         & .piePag__menu {
+            justify-content: center;
             gap: .8rem;
             padding-bottom: 1rem;
             background: none;
@@ -41,6 +42,9 @@
         }
 
         & .contactUs {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             padding: 1rem 0 0 0;
             gap: .8rem;
         }
@@ -91,8 +95,8 @@
         }
     }
 }
-@media screen and (min-width:1200px) {
+/* @media screen and (min-width:1200px) {
     .piePag {
         justify-content: space-around;
     }
-}
+} */

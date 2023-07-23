@@ -1,7 +1,7 @@
 .menu__busqueda{
     display: flex;
     justify-content: space-between;
-    background-color: var(--neonGreen);
+    background-color: var(--niceGreen);
     /* border-radius: 1.735rem;
     padding: 0 .735rem; */
     transition: all .5s;

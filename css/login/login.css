@@ -6,11 +6,6 @@ body{
     background-position: center;
     font-family: var(--titles);
 }
-.home{
-    font-weight: 600;
-    color: var(--fontDarkColor);
-    text-shadow: 2px 2px 8px black;
-}
 main{
     display: flex;
     flex-direction: column;
@@ -18,7 +13,7 @@ main{
     width: 100%;
     /* justify-content: space-between; */
     margin: 0;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 input{
     border: 2px solid transparent;

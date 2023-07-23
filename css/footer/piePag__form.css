@@ -2,7 +2,7 @@
     font-weight: 600;
 
     & span{
-        background-color: var(--backgroundLightBlue);
+        color: var(--backgroundLightBlue);
     }
 }
 

@@ -1,0 +1,16 @@
+.galeria__productos--title{
+    font-size: calc(1rem + 2vh);
+}
+a.galeria__productos--verTodo{
+    border: 2px solid transparent;
+    border-radius: .5rem;
+    /* background-color: rgba(240, 255, 255, 0.712); */
+    transition: all .2s;
+    margin-top: auto;
+    color: var(--fontDarkColor);
+
+    &:hover{
+        font-weight: 700;
+        /* color: brown; */
+    }
+}

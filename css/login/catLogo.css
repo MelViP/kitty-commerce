@@ -2,6 +2,7 @@
     display: none;
     height: auto;
     align-self: center;
+    margin: 6vh 0;
 }
 .catLogo.mobile1{
     display: none;
@@ -55,25 +56,24 @@
 @media screen and (min-width:414px) and (max-width:709px) {
     .catLogo.mobile2{
         display: flex;
-        width: calc((100% - 12px) - 2rem);
+        width: calc((90% - 12px) - 10vw);
     }
 }
 @media screen and (min-width:710px) and (max-width:1023px) {
     .catLogo.tablet{
         display: flex;
-        width: calc((64% - 28px) - 2.735rem);
+        width: calc((84% - 28px) - 20vw - 10vh);
     }
 }
 @media screen and (min-width:1024px) and (max-width:1279px) {
     .catLogo.desktop2{
         display: flex;
         width: calc(36% - 2vw);
-        padding: 1rem;
     }
 }
 @media screen and (min-width: 1228px) {
     .catLogo.catLogo.desktop1{
         display: flex;
-        width: calc(36% - 2vw);
+        width: calc(36% - 8vh);
     }
 }

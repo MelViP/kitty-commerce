@@ -1,18 +1,23 @@
 :root{
     --fontDarkColor: #464646;
+    --fontLightColor: #EAF2FD;
     --darkBlue: #2a7be4ad;
     --backgroundDark: rgb(5, 23, 0);;
     --backgroundWhite: #FFFFFF;
-    --backgroundDirt: #dd914536;
-    --backgroundLightBlue: #EAF2FD;
+    --backgroundDirt: #e1c6ab;
+    --backgroundLightBlue: #eaf2fd;
     --backLightBlueTransparent:#eaf2fd9e ;
     --niceGreen: #dafcccc4;
     --neonGreen: #37ff14da;
     --fondoTransparenteGreen: #37ff1469;
-    --starTitle: 'Minecraft Evenings';
+    --starTitle: 'KG HAPPY';
     --logoFont: 'Mf The Curious Cat';
     --text: 'SimpleCat';
     --credits: 'Valorax';
+}
+@font-face {
+    font-family: 'KG HAPPY';
+    src: url(/assets/fonts/KGHAPPY.ttf);
 }
 @font-face {
     font-family: 'Valorax';
