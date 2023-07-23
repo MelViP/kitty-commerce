@@ -1,3 +1,5 @@
+@import url("galeria_textCard.css");
+
 .galeria__productos_items{
     display: flex;
     flex-direction: column;
@@ -17,21 +19,13 @@
         width: 100%;
     }
     & .galeria__productos__textCard{
+        display: flex;
         margin: .5rem;
         display: flex;
         flex-direction: column;
         gap: .5rem;
     }
-    
-    .galeria__productos_items__nombre
-    .galeria__productos_items__precio
-    
-    & .galeria__productos--link{
-        color: var(--fontDarkColor);
-        background-color: var(--backgroundLightBlue);
-        width: fit-content;
-        align-items: flex-end;
-    }
+
 }
 
 @media screen and (min-width:0px) {
