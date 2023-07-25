@@ -1,12 +1,14 @@
 :root{
     --fontDarkColor: #464646;
     --fontLightColor: #EAF2FD;
-    --shadowDark: #868383;
-    --backgroundDark: rgb(5, 23, 0);
+    --shadowDark: #464646;
+    --backgroundDark: rgb(5, 23, 0);;
     --backgroundWhite: #FFFFFF;
-    --backgroundDirt: #e1c6abb6;
-    --backgroundLightBlue: #eaf2fd;
-    --backLightBlueTransparent:#eaf2fd9e ;
+    --backgroundDirt: #e1c6abe7;
+    --backgroundLightBlue: #d3d6dd;
+    --backLightBlueTransparent:#eaf2fd9e;
+    --botonRojo: #e32b4a;
+    --botonPurpura: #800080;
     --niceGreen: #dafcccc4;
     --neonGreen: #37ff14da;
     --fondoTransparenteGreen: #37ff1469;

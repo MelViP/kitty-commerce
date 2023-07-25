@@ -16,7 +16,6 @@
     <!--Styles sheets-->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/effectsCSS/formEffect.css">
 
     <link rel="stylesheet" href="./css/header/topMenu__logo.css" />
 
@@ -29,6 +28,8 @@
     <link rel="stylesheet" href="./css/footer/footerLogo.css" />
     <link rel="stylesheet" href="./css/footer/piePag__menu.css" />
     <link rel="stylesheet" href="./css/footer/piePag__form.css" />
+    <link rel="stylesheet" href="./css/effectsCSS/formBody.css">
+    <link rel="stylesheet" href="./css/effectsCSS/formFooter.css">
   </head>
 
   <body>
@@ -62,31 +63,31 @@
       <form class="add_NewProduct" action="form">
         <fieldset>
           <h1>Agregar nuevo producto</h1>
-          <section class="add_NewProduct-inputContainer inputBox">
-            <input class="add_NewProduct-input input " type="text" required="required"/>
+          <section class="inputContainer">
+            <input class="formInput input" type="text" required="required"/>
             <span>URL de la imagen</span>
           </section>
-          <section class="add_NewProduct-inputContainer inputBox">
-            <input class="add_NewProduct-input input" type="text" required="required"/>
+          <section class="inputContainer">
+            <input class="formInput input" type="text" required="required"/>
             <span>Categoria</span>
           </section>
-          <section class="add_NewProduct-inputContainer inputBox">
-            <input class="add_NewProduct-input input" type="text"/ required="required">
+          <section class="inputContainer">
+            <input class="formInput input" type="text"/ required="required">
             <span>Nombre de producto</span>
           </section>
-          <section class="add_NewProduct-inputContainer inputBox">
-            <input class="add_NewProduct-input input" type="text" required="required"/>
+          <section class="inputContainer ">
+            <input class="formInput input" type="text" required="required"/>
             <span>Precio del producto</span>
           </section>
-          <section class="add_NewProduct-inputContainer inputBox">
-            <textarea class="add_NewProduct-input input"
+          <section class="inputContainer">
+            <textarea class="formInput input"
             required="required"
             cols="30"
             rows="10"
             ></textarea>
             <span>Descripcion del producto</span>
           </section>
-          <button class="add_product btn">Agregar producto</button>
+          <a class="add_product btn">Agregar producto</a>
         </fieldset>
       </form>
 
