@@ -1,31 +1,25 @@
-.catLogo{
-    display: none;
-    height: auto;
-    align-self: center;
-    margin: 6vh 0;
-}
 .catLogo.mobile1{
     display: none;
-
+    background-image: url(/assets/loginPageLogos/catLaptop.jpg);
     border-radius: 31% 69% 57% 43% / 44% 27% 73% 56% ;
     box-shadow: 2px 2px black;
 }
 .catLogo.mobile2{
     display: none;
-
+    background-image: url(/assets/loginPageLogos/catLogin.jpg);
     box-shadow: inset 18px 18px 36px #664d4d,
         inset -18px -18px 36px #ffe6e6;
     border-radius: 31% 69% 20% 80% / 31% 46% 54% 69% ;
 }
 .catLogo.tablet{
     display: none;
-
+    background-image: url(/assets/loginPageLogos/catoLogo.jpeg);
     border-radius: 1% 99% 32% 68% / 42% 46% 54% 58% ;
     box-shadow: 6px 6px #ffc0cbc8, -6px -6px #0000ff8b;
 }
 .catLogo.desktop1{
     display: none;
-
+    background-image: url(/assets/loginPageLogos/logCat.png);
     border-radius: 15% 85% 73% 27% / 15% 46% 54% 85% ;
     opacity: 0.8;
     transition: all .3s;
@@ -36,7 +30,7 @@
 }
 .catLogo.desktop2{
     display: none;
-
+    background-image: url(/assets/loginPageLogos/loginCato.jpg);
     border-radius: 39% 61% 86% 14% / 57% 79% 21% 43% ;
     box-shadow: outset 18px 18px 36px #664d4d,
     outset -18px -18px 36px #ffe6e6;
@@ -74,6 +68,6 @@
 @media screen and (min-width: 1228px) {
     .catLogo.catLogo.desktop1{
         display: flex;
-        width: calc(36% - 8vh);
+        width: calc(36% - 15vh - 10vw);
     }
 }

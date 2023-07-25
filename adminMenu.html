@@ -16,6 +16,7 @@
     <!--Styles sheets-->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/effectsCSS/formEffect.css">
 
     <link rel="stylesheet" href="./css/header/topMenu__logo.css" />
 
@@ -53,7 +54,7 @@
         </section>
         </div>
         <button class="menu__btn_login btn">
-          <a class="menu__btn_login__text" href="./login.html">Menún admin ⇢ </a
+          <a class="menu__btn_login__text" href="./products.html">Menún admin ⇢ </a
           ><i></i>
         </button>
       </header>
@@ -61,18 +62,31 @@
       <form class="add_NewProduct" action="form">
         <fieldset>
           <h1>Agregar nuevo producto</h1>
-          <input type="text" placeholder="URL de imagen" />
-          <input type="text" placeholder="Categoría" />
-          <input type="text" placeholder="Nombre de producto" />
-          <input type="text" placeholder="Precio del producto" />
-          <textarea
-            name=""
-            id=""
+          <section class="add_NewProduct-inputContainer inputBox">
+            <input class="add_NewProduct-input input " type="text" required="required"/>
+            <span>URL de la imagen</span>
+          </section>
+          <section class="add_NewProduct-inputContainer inputBox">
+            <input class="add_NewProduct-input input" type="text" required="required"/>
+            <span>Categoria</span>
+          </section>
+          <section class="add_NewProduct-inputContainer inputBox">
+            <input class="add_NewProduct-input input" type="text"/ required="required">
+            <span>Nombre de producto</span>
+          </section>
+          <section class="add_NewProduct-inputContainer inputBox">
+            <input class="add_NewProduct-input input" type="text" required="required"/>
+            <span>Precio del producto</span>
+          </section>
+          <section class="add_NewProduct-inputContainer inputBox">
+            <textarea class="add_NewProduct-input input"
+            required="required"
             cols="30"
             rows="10"
-            placeholder="Descripción del producto"
-          ></textarea>
-          <button class="add_product">Agregar producto</button>
+            ></textarea>
+            <span>Descripcion del producto</span>
+          </section>
+          <button class="add_product btn">Agregar producto</button>
         </fieldset>
       </form>
 
@@ -127,21 +141,16 @@
         </nav>
         <form class="contactUs">
           <p class="form__title destacado"><span>Hable con nosotros</span></p>
-          <input
-            type="text"
-            class="form__input input"
-            placeholder="Nombre"
-            required
-          />
-          <textarea
-            class="form__textarea input"
-            cols="30"
-            rows="5"
-            placeholder="Escribe tu mensaje"
-            required
-          ></textarea>
+          <div class="inputBox">
+              <input type="text" class="form__input input" required="required">
+              <span>Nombre</span>
+          </div>
+          <div class="inputBox">
+              <textarea class="form__textarea input" id="" cols="30" rows="5" required="required"></textarea>
+              <span>Escribe tu mensaje</span>
+          </div>
           <button class="form__btn btn"><span>Enviar</span><i></i></button>
-        </form>
+      </form>
       </footer>
     </main>
     <div class="rodapie">

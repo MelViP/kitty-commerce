@@ -1,10 +1,15 @@
-.galeria__productos_items__nombre
-.galeria__productos_items__precio
+/* .galeria__productos_items__nombre
+.galeria__productos_items__precio */
+
 .galeria__productos--link {
   margin-top: auto;
   color: var(--fontDarkColor);
   background-color: var(--backgroundLightBlue);
   width: fit-content;
   align-items: flex-end;
+
+  &:hover{
+    color: red;
+  }
 }
 

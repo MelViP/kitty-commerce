@@ -3,7 +3,7 @@
     top: 0%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--backgroundDirt);
+    background: var(--backgroundDirt);
     width: 100vw;
     z-index: 1;
     padding-bottom: .5rem;

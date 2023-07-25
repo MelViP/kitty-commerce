@@ -1,277 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap"
+      rel="stylesheet"
+    />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>iKitty</title>
 
     <!--Styles sheets-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/effectsCSS/formEffect.css" />
 
-    <link rel="stylesheet" href="./css/header/topMenu__logo.css">
+    <link rel="stylesheet" href="./css/header/topMenu__logo.css" />
 
-    <link rel="stylesheet" href="./css/header/topMenu.css">
-    <link rel="stylesheet" href="./css/header/topMenu__busqueda.css">
+    <link rel="stylesheet" href="./css/header/topMenu.css" />
+    <link rel="stylesheet" href="./css/header/topMenu__busqueda.css" />
 
-    <link rel="stylesheet" href="./css/banner/banner.css">
-    <link rel="stylesheet" href="./css/banner/banner__items.css">
+    <link rel="stylesheet" href="./css/banner/banner.css" />
+    <link rel="stylesheet" href="./css/banner/banner__items.css" />
+    <link rel="stylesheet" href="./css/banner/arrow.css">
 
-    <link rel="stylesheet" href="./css/galeria/galeria.css">
-    <link rel="stylesheet" href="./css/galeria/galeriaTittlebox.css">
-    <link rel="stylesheet" href="./css/galeria/galeria__items.css">
-    <link rel="stylesheet" href="./css/galeria/galeria_textCard.css">
+    <link rel="stylesheet" href="./css/galeria/galeria.css" />
+    <link rel="stylesheet" href="./css/galeria/galeriaTittlebox.css" />
+    <link rel="stylesheet" href="./css/galeria/galeria__items.css" />
+    <link rel="stylesheet" href="./css/galeria/galeria_textCard.css" />
 
-    <link rel="stylesheet" href="./css/footer/footer.css">
-    <link rel="stylesheet" href="./css/footer/footerLogo.css">
-    <link rel="stylesheet" href="./css/footer/piePag__menu.css">
-    <link rel="stylesheet" href="./css/footer/piePag__form.css">
-</head>
+    <link rel="stylesheet" href="./css/footer/footer.css" />
+    <link rel="stylesheet" href="./css/footer/footerLogo.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__menu.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__form.css" />
+  </head>
 
-<body>
+  <body>
     <main class="whole">
-        <header class="menu">
-            <div class="menu__menu">
-                <section class="menu__logo logoBox">
-                    <img class="menu__logo_logo logoPic" src="./assets/logoCat.png"  alt="Logo PixelKitty Store">
-                    <p class="menu__logo_leyenda logoLeyenda">
-                        <span class="menu__logo_leyenda_text logoText">Pixel</span>
-                        <span class="menu__logo_leyenda_text logoText">Kitty</span>
-                        <span class="menu__logo_leyenda_text logoText">Store</span>
-                    </p>
-                </section>
-                <section class="menu__busqueda">
-                    <input type="text" class="menu__barraBusqueda input" placeholder="🔎  ¿Que deseas buscar?">
-                </section>
-            </div>
-            <button class="menu__btn_login btn"><a class="menu__btn_login__text" href="./login.html">Login ⇢ </a><i></i></button>
-        </header>
-        <section class="banner">
-            <div class="banner__box">
-                <p class="banner__titulo">Julio promocional</p>
-                <p class="banner__leyenda">Productos seleccionados con 33% de descuento</p>
-                <button class="banner__btn btn">Consola</button>
-            </div>
-        </section>
-        <div class="galeria">
-            <section class="galeria__productos">
-                <nav class="galeria__productos_titleBox">
-                    <h2 class="galeria__productos--title">Salud y bienestar</h2>
-                    <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>
-                </nav>
-                <nav class="galeria__productos_box">
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catFood.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Comida de Gato Montero</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catToysacrame.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Macrame toy with catnip</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catToyscrath.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Scratch board grinding nail</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catPlate.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Plate design for the cat house</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catnip.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Catnip natural</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catBrush.png">
-                        <p class="galeria__productos_items__nombre">Fine hair brush</p>
-                        <p class="galeria__productos_items__precio destacado">$60</p>
-                        <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                    </li>
-                </nav>
-            </section>
-            <section class="galeria__productos">
-                <nav class="galeria__productos_titleBox">
-                    <h2 class="galeria__productos--title">Camisetas</h2>
-                    <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>                </nav>
-                <nav class="galeria__productos_box">
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTdad.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Cat dad T-shirt</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTsweeter.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Sweeter cat mama</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTpawsitive.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Stay Pawsitive</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTschrodinger.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Schrodinger cat T-shirt</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTworkout.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">I just want to workout and hang with my cat</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catTlocalstreetcat.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Support your local street cat shirt</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-
-                    </li>
-                </nav>
-
-            </section>
-            <section class="galeria__productos">
-                <nav class="galeria__productos_titleBox">
-                    <h2 class="galeria__productos--title">Diversos</h2>
-                    <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>                </nav>
-                <nav class="galeria__productos_box">
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catMug.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Cat mug</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catStickers.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Stickers for Laptop</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catCookies.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Cat shaped coockies</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/luckyCat.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Lukcy cat</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catMug2.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Another cat mug</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                    <li class="galeria__productos_items">
-                        <img class="galeria__productos_items__foto" src="./assets/products/catBlanket.png">
-                        <div class="galeria__productos__textCard">
-                            <p class="galeria__productos_items__nombre">Cotton cat blanket</p>
-                            <p class="galeria__productos_items__precio destacado">$60</p>
-                            <a href="" class="galeria__productos--link destacado">Ver productos</a>
-                        </div>
-                    </li>
-                </nav>
-            </section>
+      <header class="menu">
+        <div class="menu__menu">
+          <section class="menu__logo logoBox">
+            <img
+              class="menu__logo_logo logoPic"
+              src="./assets/logoCat.png"
+              alt="Logo PixelKitty Store"
+            />
+            <p class="menu__logo_leyenda logoLeyenda">
+              <span class="menu__logo_leyenda_text logoText">Pixel</span>
+              <span class="menu__logo_leyenda_text logoText">Kitty</span>
+              <span class="menu__logo_leyenda_text logoText">Store</span>
+            </p>
+          </section>
+          <section class="menu__busqueda">
+            <input
+              type="text"
+              class="menu__barraBusqueda input"
+              placeholder="🔎  ¿Que deseas buscar?"
+            />
+          </section>
         </div>
-        <footer class="piePag">
-            <section class="piePag__logo logoBox">
-                <img class="piePag__logo_logo logoPic" alt="Logo PixelKitty Store" src="./assets/logoCat.png">
-                <p class="piePag__logo_leyenda logoLeyenda">
-                    <span class="piePag__logo_leyenda_text logoText piedPag">Pixel</span>
-                    <span class="piePag__logo_leyenda_text logoText piedPag">Kitty</span>
-                    <span class="piePag__logo_leyenda_text logoText piedPag">Store</span>
+        <button class="menu__btn_login btn">
+          <a class="menu__btn_login__text" href="./login.html">Login ⇢ </a
+          ><i></i>
+        </button>
+      </header>
+      <section class="banner">
+        <div class="banner__box">
+          <p class="banner__titulo">Julio promocional</p>
+          <p class="banner__leyenda">
+            Productos seleccionados con 33% de descuento
+          </p>
+          <button class="banner__btn btn">Consola</button>
+          <fieldset class="callToAction">
+            <article class="arrowDown">⏷</article>
+          </fieldset>
+        </div>
+      </section>
+      <div class="galeria">
+        <section class="galeria__productos">
+          <nav class="galeria__productos_titleBox">
+            <h2 class="galeria__productos--title">Salud y bienestar</h2>
+            <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>
+          </nav>
+          <nav class="galeria__productos_box">
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catFood.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Comida de Gato Montero
                 </p>
-            </section>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catToysacrame.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Macrame toy with catnip
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catToyscrath.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Scratch board grinding nail
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catPlate.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Plate design for the cat house
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catnip.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Catnip natural</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catBrush.png"
+              />
+              <p class="galeria__productos_items__nombre">Fine hair brush</p>
+              <p class="galeria__productos_items__precio destacado">$60</p>
+              <a href="" class="galeria__productos--link destacado"
+                >Ver productos</a
+              >
+            </li>
+          </nav>
+        </section>
+        <section class="galeria__productos">
+          <nav class="galeria__productos_titleBox">
+            <h2 class="galeria__productos--title">Camisetas</h2>
+            <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>
+          </nav>
+          <nav class="galeria__productos_box">
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTdad.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Cat dad T-shirt</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTsweeter.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Sweeter cat mama</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTpawsitive.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Stay Pawsitive</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTschrodinger.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Schrodinger cat T-shirt
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTworkout.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  I just want to workout and hang with my cat
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catTlocalstreetcat.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Support your local street cat shirt
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+          </nav>
+        </section>
+        <section class="galeria__productos">
+          <nav class="galeria__productos_titleBox">
+            <h2 class="galeria__productos--title">Diversos</h2>
+            <a class="galeria__productos--verTodo btn">Ver todo ⇢ </a>
+          </nav>
+          <nav class="galeria__productos_box">
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catMug.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Cat mug</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catStickers.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Stickers for Laptop
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catCookies.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Cat shaped coockies
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/luckyCat.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Lukcy cat</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catMug2.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">Another cat mug</p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+            <li class="galeria__productos_items">
+              <img
+                class="galeria__productos_items__foto"
+                src="./assets/products/catBlanket.png"
+              />
+              <div class="galeria__productos__textCard">
+                <p class="galeria__productos_items__nombre">
+                  Cotton cat blanket
+                </p>
+                <p class="galeria__productos_items__precio destacado">$60</p>
+                <a href="" class="galeria__productos--link destacado"
+                  >Ver productos</a
+                >
+              </div>
+            </li>
+          </nav>
+        </section>
+      </div>
+      <footer class="piePag">
+        <section class="piePag__logo logoBox">
+          <img
+            class="piePag__logo_logo logoPic"
+            alt="Logo PixelKitty Store"
+            src="./assets/logoCat.png"
+          />
+          <p class="piePag__logo_leyenda logoLeyenda">
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Pixel</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Kitty</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Store</span
+            >
+          </p>
+        </section>
 
-            <nav class="piePag__menu">
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Política de Privacidad </span></a>
-                </li>
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Programa de fidelidad </span></a>
-                </li>
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Nuestras tiendas </span></a></li>
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Quiero ser franquiciado </span></a>
-                </li>
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Anúncie aquí </span></a></li>
-                <li class="piePag__item"><a href="" class="piePAg__item_link"><span> Quienes somos </span></a></li>
-            </nav>
-            <form class="contactUs">
-                <p class="form__title destacado"><span>Hable con nosotros</span></p>
-                <input type="text" class="form__input input" placeholder="Nombre" required>
-                <textarea class="form__textarea input" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"
-                    required></textarea>
-                <button class="form__btn btn"><span>Enviar</span><i></i></button>
-            </form>
-        </footer>
+        <nav class="piePag__menu">
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Política de Privacidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Programa de fidelidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Nuestras tiendas </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quiero ser franquiciado </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"><span> Anúncie aquí </span></a>
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quienes somos </span></a
+            >
+          </li>
+        </nav>
+        <form class="contactUs">
+          <p class="form__title destacado"><span>Hable con nosotros</span></p>
+          <div class="inputBox">
+            <input type="text" class="form__input input" required="required" />
+            <span>Nombre</span>
+          </div>
+          <div class="inputBox">
+            <textarea
+              class="form__textarea input"
+              id=""
+              cols="30"
+              rows="5"
+              required="required"
+            ></textarea>
+            <span>Escribe tu mensaje</span>
+          </div>
+          <button class="form__btn btn"><span>Enviar</span><i></i></button>
+        </form>
+      </footer>
     </main>
     <div class="rodapie">
-        <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
+      <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
     </div>
-</body>
-
+  </body>
 </html>

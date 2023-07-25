@@ -1,10 +1,10 @@
 :root{
     --fontDarkColor: #464646;
     --fontLightColor: #EAF2FD;
-    --darkBlue: #2a7be4ad;
-    --backgroundDark: rgb(5, 23, 0);;
+    --shadowDark: #868383;
+    --backgroundDark: rgb(5, 23, 0);
     --backgroundWhite: #FFFFFF;
-    --backgroundDirt: #e1c6ab;
+    --backgroundDirt: #e1c6abb6;
     --backgroundLightBlue: #eaf2fd;
     --backLightBlueTransparent:#eaf2fd9e ;
     --niceGreen: #dafcccc4;

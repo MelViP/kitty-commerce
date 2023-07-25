@@ -3,20 +3,22 @@ li.inputContainer {
         background: var(--backLightBlueTransparent);
         gap: 1rem;
         border-radius: calc(1rem + 1vw);
+        padding: 2vh 2vw 2vh 1vw;
         /* padding: 1rem 0 1rem 1rem; */
 
         & input.formInput {
-                width: 100%;
-                height: auto;
+                
 
                 &::placeholder{
                         text-align: left;
-                        /* font-size: calc(1rem + 1vw); */
+                        /* font-size: 2.55vh; */
                 }
         }
 }
 span.material-symbols-rounded {
-        font-size: calc(1rem + 2vw);
+        display: flex;
+        align-items: center;
+        font-size: 1.75rem;
 }
 a.entrar {
         display: flex;
@@ -25,8 +27,8 @@ a.entrar {
         font-weight: 600;
         background-color: var(--darkBlue);
         border-radius: calc(1rem + .5vw);
-        padding: calc(1rem - 2vw);
-        font-size: calc(1rem + .8vw);
+        padding: 2vh 0;
+        /* font-size: 2.55vh; */
 }
 
 
@@ -34,13 +36,17 @@ a.entrar {
 /*RESPONSIVE*/
 
 @media screen and (min-width:0) and (max-width:413px) {
-        .formInput::placeholder{
-                font-size: calc(1rem -5vw);
+       input.formInput::placeholder{
+                text-align: left;
+                font-size: 2.55vh;
+                
         }
-        .inputContainer, a.entrar{
-                padding: calc(1rem - 3vw);
+
+        a.entrar {
+                padding: 2vh 0;
+                font-size: 2.55vh;
         }
-}
+}/*
 @media screen and (min-width:414px) and (max-width:709px){
         .formInput::placeholder{
                 font-size: calc(1rem - .5vw);
@@ -59,15 +65,12 @@ a.entrar {
         .inputContainer, a.entrar{
                 padding: calc(1rem - .1vw);
         }
-}
+}*/
 @media screen and (min-width:1024px) {
-        li.inputContainer{
-                padding: calc(1rem - 1vw);
+        input.formInput::placeholder{
+                font-size: 3vh;}
+
+        a.entrar {
+                font-size: 3.5vh;
         }
-        .formInput::placeholder{
-                font-size: calc(1rem + .2vw);
-        }
-        .inputContainer, a.entrar{
-                padding: calc(1rem - .1vw);
-        }
-} 
+}

@@ -1,3 +1,9 @@
+form.add_NewProduct{
+    background: url(/assets/cats__stores.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-clip: border-box; */
+}
 .add_NewProduct{
     margin-top: 5.25rem;
     padding: 4rem;
@@ -8,5 +14,70 @@
 fieldset{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
+    padding: 2rem 4rem;
+    border-radius: 4rem;
+    background-color: var(--backgroundLightBlue);
+    box-shadow: 5px 5px 8px var(--shadowDark),
+        -5px 5px 8px var(--shadowDark),
+        5px -5px 8px var(--shadowDark);
 }
+
+.add_NewProduct-inputContainer
+
+.add_NewProduct-input{
+    background-color: var(--neonGreen);
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px var(--shadowDark);
+}
+
+/*
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    background-color: var(--backgroundDirt);
+    border-radius: 0 1rem .5rem;
+}
+.inputBox span{
+    color: rgba(128, 128, 128, 0.916);
+    position: absolute;
+    /* left: 0; */ /*
+    pointer-events: none;
+    padding-top: 1.75vh;
+    padding-left: .5vw;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+    /*si input es valido aplicar lo siguiente a span*//*
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-10px);
+    font-size: calc(100% - .75vh);
+    padding: 1vh 1vw 0;
+    background-color: white;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: .1rem;
+    z-index: 1;
+}
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus{
+    border: 1px solid #00dfc4;  
+    border-radius: 5px;  
+}
+
+.add_product button{
+    width: 100%;
+    border: 2px solid var(--backgroundDirt);
+}*/
