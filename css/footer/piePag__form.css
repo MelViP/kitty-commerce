@@ -24,7 +24,7 @@
     /* padding: 1rem 0; */
 }
 
-@media screen and (min-width:0) {
+@media screen and (min-width:0) and (max-width:409px) {
     .form__btn{
         border-radius: 1rem;
         padding: .35rem;

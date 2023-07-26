@@ -9,6 +9,7 @@
             color: var(--fontDarkColor);
             background-color: var(--backgroundLightBlue);
             font-size: calc(100% + 1vh);
+            padding: 0 .3rem;
         }
     }
 }
