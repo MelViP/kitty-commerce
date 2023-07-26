@@ -15,5 +15,5 @@ ul.form_inputs {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: 25vw;
+    /* width: 25vw; */
 }

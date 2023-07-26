@@ -2,7 +2,7 @@
     
       
     
-    margin: 6vh 8vw;
+    margin: 6vh auto;
     /* width: 70vw; */
     
 }
@@ -11,6 +11,8 @@
     justify-content: center;
     padding: 6vh 4vw;
 
+    /* width: ;  */
+
     border-radius: 2.375rem;
     background-color: rgba(167, 184, 145, 0.917);
     box-shadow: 5px 5px 10px #fbf8dfd7, -5px -5px 10px #fbf8dfd7;
@@ -18,16 +20,5 @@
 
     &:hover{
         box-shadow: 10px 10px 25px #fbf8dfd7, -10px -10px 25px #fbf8dfd7, 9px -9px 25px #fbf8dfd7, -9px 9px 25px #fbf8dfd7;
-    }
-}
-@media screen and (min-width:0){
-    .loginForm{
-        flex-direction: column;
-        align-items: center;
-    }
-}
-@media screen and (min-width:1024px){
-    .loginForm{
-        flex-direction: row;
     }
 }
