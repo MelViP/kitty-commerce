@@ -13,9 +13,8 @@
 }
 
 @media screen and (min-width:0) {
-    .menu__logo{
-        flex-direction: row;
-        
+    .menu__logo{     
+        padding-left: 1rem;   
 
         & .menu__logo_logo{ 
             height: 3rem;
@@ -25,14 +24,14 @@
         & .menu__logo_leyenda{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            /* justify-content: center; */
             line-height: 70%;
         }
 
         & .menu__logo_leyenda_text{
             display: flex;
             font-size: .5rem;
-            flex-direction: column;
+            /* flex-direction: column; */
         }
     }
 }

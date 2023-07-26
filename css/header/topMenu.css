@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     background: var(--backgroundDirt);
-    width: 100vw;
+    /* width: 100%; */
     z-index: 1;
     padding-bottom: .5rem;
 
@@ -27,15 +27,18 @@
 
 @media screen and (min-width:0) {
     .menu{
-        align-items: center;
-        padding: 1rem;
+        /* align-items: center; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         gap: .5rem;
+        width: 100vw;
 
         & .menu__menu{
             align-items: center;
         }
         & .menu__btn_login{
-            border-radius: 1rem;
+            border-radius: 1.3rem;
+            margin-right: 1rem;
         }
         & .menu__btn_login__text{
             font-size: .8735rem;

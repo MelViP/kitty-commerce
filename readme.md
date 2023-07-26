@@ -4,20 +4,21 @@
 
 # Pixel Kitty E-commerce
 
-This is a model of a e-commerce about geek products and technology. 
+This is a model of a e-commerce about cat products.
+
 Presented as ONE-Alura challenge G5
+
+https://melvip.github.io/my_e-commerce/
 
 
 ## Lessons Learned
 
-Currently in progress
+- How to effectively name classes in html for latter use in more that one html page with the same css code
 
 
-## Comming in Features
+## Features
 
-- Desktop mode
-- Mobile mode
-- 
+- Responsive page
 
 
 ## Authors
