@@ -14,11 +14,12 @@ https://melvip.github.io/my_e-commerce/
 ## Lessons Learned
 
 - How to effectively name classes in html for latter use in more that one html page with the same css code
+- how to use simple keyframes in CSS
 
 
 ## Features
 
-- Responsive page
+- Responsive site
 
 
 ## Authors
