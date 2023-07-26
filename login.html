@@ -1,59 +1,147 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
 
     <!--Styles sheets-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
-    <link rel="stylesheet" href="./css/login/login.css">
+    <link rel="stylesheet" href="./css/login/login.css" />
+    <link rel="stylesheet" href="./css/login/loginHeader.css" />
 
-    <link rel="stylesheet" href="./css/footer/footer.css">
+    <link rel="stylesheet" href="./css/login/formContainer.css" />
+    <link rel="stylesheet" href="./css/login/catLogo.css" />
+    <link rel="stylesheet" href="./css/login/form_form.css" />
+    <link rel="stylesheet" href="./css/effectsCSS/formBody.css" />
+
+    <link rel="stylesheet" href="./css/footer/footer.css" />
+    <link rel="stylesheet" href="./css/footer/footerLogo.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__menu.css" />
+    <link rel="stylesheet" href="./css/footer/piePag__form.css" />
+    <link rel="stylesheet" href="./css/effectsCSS/formFooter.css">
 
     <!--Icons-->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
 
-<body>
-    <header class="container">
-        <img class="logo" src="./assets/cat_banner">
-        <a href="./index.html" class="home">
-            <span class="menu__logo_leyenda_text logoText"> ⇠ Home</span>
-        </a>
-    </header>
+  <body>
     <main>
-        <section class="loginForm">
-            <img src="./assets/loginImg.jpg" alt="logo" class="catLogo">
-            <div class="form__izq">
-                <p class="form__title destacado">Inicio de Sesión</p>
-                <form>
-                    <p class="directions">Ingrese sus datos para acceder a la plataforma</p>
-                    <div class="inputs">
-                        <span class="material-symbols-rounded">
-                            account_circle
-                            <input type="email" placeholder="Enter email" required>
-                        </span>
-                        <span class="material-symbols-rounded">
-                            password
-                            <input type="password" placeholder="Enter password" required>
-                        </span>
-                    </div>
-                    <a href="" class="entrar btn">Entrar</a>
-                </form>
-            </div>
-
+      <header class="container titles">
+        <a href="./index.html" class="home">
+          <img class="logo logoPic" src="./assets/logoCat.png" />
+          <span class="menu__logo_leyenda logoLeyenda"> ⇠ Home</span>
+        </a>
+      </header>
+        <form class="formContainer">
+            <fieldset class="loginForm">   
+                <!-- <div class="catLogo mobile1"></div>
+                <div class="catLogo mobile2"></div>
+                <div class="catLogo tablet"></div>
+                <div class="catLogo desktop1"></div>
+                <div class="catLogo desktop2"></div> -->
+              <ul class="form_inputs">
+                
+                <h2 class="form__title destacado">Inicio de Sesion</h2>
+                <p class="directions bodyFont">
+                  Ingrese sus datos para acceder a la plataforma
+                </p>
+                <li class="inputContainer ">
+                  <!-- <span class="material-symbols-rounded">account_circle</span> -->
+                  <input
+                    class="formInput"
+                    type="email"
+                    required="required"
+                  />
+                  <span>Enter email</span>
+                </li>
+                <li class="inputContainer">
+                  <!-- <span class="material-symbols-rounded">password</span> -->
+                  <input
+                    class="formInput"
+                    type="password"
+                    required="required"
+                  />
+                  <span>Enter password</span>
+                </li>
+                <a href="./products.html" class="entrar btn">Entrar</a>
+              </ul>
+            </fieldset>
+        </form>
+      <footer class="piePag bodyFont">
+        <section class="piePag__logo logoBox">
+          <img
+            class="piePag__logo_logo logoPic"
+            alt="Logo PixelKitty Store"
+            src="./assets/logoCat.png"
+          />
+          <p class="piePag__logo_leyenda logoLeyenda">
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Pixel</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Kitty</span
+            >
+            <span class="piePag__logo_leyenda_text logoText piedPag"
+              >Store</span
+            >
+          </p>
         </section>
 
+        <nav class="piePag__menu">
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Política de Privacidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Programa de fidelidad </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Nuestras tiendas </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quiero ser franquiciado </span></a
+            >
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"><span> Anúncie aquí </span></a>
+          </li>
+          <li class="piePag__item">
+            <a href="" class="piePAg__item_link"
+              ><span> Quienes somos </span></a
+            >
+          </li>
+        </nav>
+        <form class="contactUs">
+          <p class="form__title destacado"><span>Hable con nosotros</span></p>
+          <div class="inputBox">
+              <input type="text" class="form__input input" required="required">
+              <span>Nombre</span>
+          </div>
+          <div class="inputBox">
+              <textarea class="form__textarea input" id="" cols="30" rows="5" required="required"></textarea>
+              <span>Escribe tu mensaje</span>
+          </div>
+          <button class="form__btn btn"><span>Enviar</span><i></i></button>
+      </form>
+      </footer>
+      <div class="rodapie">
+        <p class="rodapie__credits">Hecho con el <span>🫀</span> por Mel</p>
+      </div>
     </main>
-    <div class="rodapie">
-        <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
-    </div>
-</body>
-
+  </body>
 </html>

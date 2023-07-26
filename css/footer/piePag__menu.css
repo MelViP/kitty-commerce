@@ -3,22 +3,13 @@
     font-weight: 600;
 
     & span {
-        background-color: var(--backgroundLightBlue);
+        color: var(--backgroundLightBlue);
         
-        &::after{
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            height: 2px;
-            width: 100%;
-            left: 0;
-            background-color: var(--fontDarkColor);
-            transition: 0.3s;
-            transition-timing-function: ease-in-out;
-            transform: scaleX(0);
-        }
-        &:hover::after{
-            transform: scaleX(1);
+        &:hover{
+            color: var(--fontDarkColor);
+            background-color: var(--backgroundLightBlue);
+            font-size: calc(100% + 1vh);
+            padding: 0 .3rem;
         }
     }
 }
@@ -30,6 +21,22 @@
     
         & span {
             font-size: .8rem;
+        }
+    }
+}
+@media screen and (min-width:410px) {
+    .piePAg__item_link{
+    
+        & span {
+            font-size: 1rem;
+        }
+    }
+}
+@media screen and (min-width:1220px) {
+    .piePAg__item_link{
+    
+        & span {
+            font-size: 1.2rem;
         }
     }
 }

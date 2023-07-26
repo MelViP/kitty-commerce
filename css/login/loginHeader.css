@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+    gap: .5rem;
+    background: var(--backLightBlueTransparent);
+
+}
+.home{
+    font-weight: 600;
+    color: var(--fontDarkColor);
+    text-shadow: 2px 2px 8px black;
+    display: flex;
+
+    & .menu__logo_leyenda{
+        display: flex;
+        align-items: center;
+    }
+}
+.logo{
+    margin-top: .5rem;
+    width: 3.735rem;
+    height: auto;
+}
+.menu__logo_leyenda{
+    font-size: calc(.9rem + 1vh);
+}

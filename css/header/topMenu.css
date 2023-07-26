@@ -1,6 +1,12 @@
 .menu{
+    position: fixed;
+    top: 0%;
     display: flex;
     justify-content: space-between;
+    background: var(--backgroundDirt);
+    /* width: 100%; */
+    z-index: 1;
+    padding-bottom: .5rem;
 
     & .menu__menu{
         display: flex;
@@ -9,27 +15,30 @@
 
     & .menu__btn_login{
         border: 2px solid transparent;
-        background: linear-gradient(48deg, rgba(227, 43, 74, 0.2), rgba(128, 0, 128, 0.2));
+        background: linear-gradient(48deg, rgb(227, 43, 74), rgba(128, 0, 128));
     }
 
     & .menu__btn_login__text{
         font-weight: 700;
-        color: var(--fontDarkColor);
+        color: var(--fontLightColor);
     }
 }
 
 
 @media screen and (min-width:0) {
     .menu{
-        align-items: center;
-        padding: 1rem;
+        /* align-items: center; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         gap: .5rem;
+        width: 100vw;
 
         & .menu__menu{
             align-items: center;
         }
         & .menu__btn_login{
-            border-radius: 1rem;
+            border-radius: 1.3rem;
+            margin-right: 1rem;
         }
         & .menu__btn_login__text{
             font-size: .8735rem;
@@ -47,6 +56,7 @@
             align-items: center;
         }
         & .menu__btn_login{
+            margin-right: 14vw;
             border-radius: 2rem;
             padding: .8735rem;
         }
@@ -58,6 +68,8 @@
 @media screen and (min-width:710px) {
     .menu{
         padding: 1rem 3.735rem;
+        & .menu__btn_login{
+            margin-right: 15.75vw;}
     }
 }
 @media screen and (min-width:1024px) {
@@ -80,6 +92,7 @@
             border-radius: 4rem;
             padding: 1rem; 
             width: 8.735rem;
+            margin-right: 8.75vw;
         }
     
     }

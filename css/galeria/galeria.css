@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* padding-top: 50vh; */
 
     & .galeria__productos{
         display: flex;
@@ -15,6 +16,7 @@
     }
     
 }
+
 
 
 @media screen and (min-width:0px) {
@@ -73,6 +75,7 @@
 @media screen and (min-width:1024px) {
     .galeria{
         padding: 3.735rem;
+        padding-top: 8rem;
         gap: 4.735rem;
 
         & .galeria__productos{
@@ -83,5 +86,11 @@
             justify-content: space-between;
         }
     
+    }
+}
+
+@media screen and (min-width:1224px) {
+    .galeria{
+        font-size: 1rem;
     }
 }

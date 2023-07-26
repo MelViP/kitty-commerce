@@ -1,0 +1,57 @@
+.inputContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .formInput{
+        width: 100%;
+        background-color: var(--backLightBlueTransparent);
+        border-radius: 1rem;
+        padding: .5rem;
+    }
+    .inputContainer span{
+        color: rgba(128, 128, 128, 0.916);
+        position: absolute;
+        /* left: 0; */
+        pointer-events: none;
+        padding-top: 1.75vh;
+        padding-left: .5vw;
+        text-transform: uppercase;
+        transition: all .5s;
+    }
+    .formInput:valid ~ span,
+    .formInput:focus ~ span
+    {
+        /*si input es valido aplicar lo siguiente a span*/
+        color: var(--fontDarkColor);
+        transform: translateX(10px) translateY(-10px);
+        font-size: calc(100% - .75vh);
+        padding: 1vh 1vw 0;
+        background-color: var(--backgroundLightBlue);
+        border-left: 1px solid ;
+        border-right: 1px solid var(--botonPurpura);
+        text-shadow: 0px 0px 2px;
+        letter-spacing: .1rem;
+        z-index: 1;
+    }
+    .formInput:valid,
+    .formInput:focus{
+        border: 2.75px solid var(--botonRojo);  
+        border-radius: 5px;  
+}
+
+a.entrar, a.add_product{
+        display: flex;
+        justify-content: center;
+        color: var(--fontLightColor);
+        font-weight: 600;
+        background: linear-gradient(48deg, rgb(227, 43, 74), rgba(128, 0, 128));
+        border-radius: calc(1rem + .5vw);
+        padding: 2vh 0;
+        /* font-size: 2.55vh; */
+}
+
+
+
+/*RESPONSIVE*/
+
