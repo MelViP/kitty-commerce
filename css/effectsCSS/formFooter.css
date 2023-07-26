@@ -26,7 +26,7 @@
     /*si input es valido aplicar lo siguiente a span*/
     color: var(--backgroundLightBlue);
     transform: translateX(10px) translateY(-10px);
-    font-size: calc(100% - .75vh);
+    font-size: calc(100% - .1vh);
     padding: 1vh 1vw 0;
     background-color: var(--backgroundDark);
     border-left: 1px solid var(--neonGreen);
