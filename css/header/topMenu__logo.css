@@ -8,6 +8,7 @@
     background-position: center;
 }
 .menu__logo_leyenda_text{
+    color: var(--fontDarkColor);
     /* margin-bottom: .5rem; */
 }
 
