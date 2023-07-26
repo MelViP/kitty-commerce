@@ -1,4 +1,4 @@
-.form__title{
+.form__title{ /*hable con nosotros*/
     font-weight: 600;
 
     & span{
@@ -28,6 +28,9 @@
     .form__btn{
         border-radius: 1rem;
         padding: .35rem;
+    }
+    .form__input{
+        height: 2rem;
     }
 }
 @media screen and (min-width:410px) {

@@ -18,8 +18,9 @@
         margin-bottom: 1rem;
     
         & .piePag__logo_logo{
-            width: calc((100% - 20%) / 2);
-            height: calc((100% - 20%) / 2);
+            width: calc((100% - 3%) /2);
+            height: auto;
+            /* calc((100% - 20%) / 2); */
         }
         & .piePag__logo_leyenda{
             font-size: .8rem;
@@ -34,8 +35,9 @@
         margin-bottom: 1.375rem;
     
         & .piePag__logo_logo{
-            width: calc((78% - 40%) / 2);
-            height: calc((100% - 40%) / 2);
+            width: calc((78% - 8%) / 2);
+            height: auto;
+            /* calc((100% - 40%) / 2); */
         }
         & .piePag__logo_leyenda{
             font-size: .8rem;

@@ -12,18 +12,15 @@
     --niceGreen: #dafcccc4;
     --neonGreen: #37ff14da;
     --fondoTransparenteGreen: #37ff1469;
-    --starTitle: 'KG HAPPY';
+    --starTitle: 'SimpleCat';
+    --titles: 'SimpleCat';
     --logoFont: 'Mf The Curious Cat';
-    --text: 'SimpleCat';
-    --credits: 'Valorax';
+    --text: 'MF The Curious Cat';
+    --credits: 'KG HAPPY';
 }
 @font-face {
     font-family: 'KG HAPPY';
     src: url(/assets/fonts/KGHAPPY.ttf);
-}
-@font-face {
-    font-family: 'Valorax';
-    src: url(/assets/fonts/Valorax.otf);
 }
 @font-face {
     font-family: 'Mf The Curious Cat';
@@ -42,7 +39,7 @@
 }
   
 /*titulos grandes*/
-.banner__titulo{
+.banner__titulo, .titles{
     font-family: var(--starTitle);
 }
 .galeria__productos--title{
@@ -52,6 +49,13 @@
 }
 .destacado{
     font-weight: 700;
+}
+
+/*cuerpo*/
+.bodyFont{
+    font-family: var(--text);
+    font-weight: 700;
+    letter-spacing: 1.5;
 }
 
 /*botones general*/
@@ -127,5 +131,16 @@
 
 }
 
+/*rodapie*/
+
+.rodapie {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    font-family: var(--credits);
+    color: var(--fontDarkColor);
+    background: var(--backgroundLightBlue);
+    text-align: center;
+}
 
 

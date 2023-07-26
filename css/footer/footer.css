@@ -21,11 +21,7 @@
     }
 }
 
-.rodapie {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-}
+
 
 @media screen and (min-width:0) {
     .piePag {
@@ -68,7 +64,7 @@
         }
 
         & .contactUs {
-            padding-top: 0;
+            margin-top: 2rem;
             position: absolute;
             left: calc(80% - 40.75%);
             width: calc((100% - 40.75%) - 2.75rem);
