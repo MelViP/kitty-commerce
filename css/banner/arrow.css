@@ -20,9 +20,9 @@
 .arrowDown{
     /* position: absolute; */
     /* top: 34.8125rem; */
-    width: 10vw;
+    width: fit-content;
     height: 10vh;
-    font-size: 10rem;
+    font-size: 10vh;
     color: var(--fontLightColor);
     font-family: var(--starTitle);
 
