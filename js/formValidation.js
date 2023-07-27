@@ -5,20 +5,22 @@ const allInputs = document.querySelectorAll('.inputValidate');
 allInputs.forEach( input => {
     input.addEventListener('blur', (event)=>{
         validate(event.target);
+        console.log(event.target)
     })
 });
+
 
 function validate(input){ //ghost es validators
     const dataType = input.dataset.type;
 
     if(input.validity.valid){
         input.parentElement.classList.remove('input-message-error');
-        input.parentElement.querySelector(".input-message-error").innerHTML = "";
+        allInputs.querySelector(".input-message-error").innerHTML = "";
     } else {
-        // input.parentElement.classList.add('errorAlert');
+          // const alert = getElementById('')
         input.parentElement.classList.add('input-message-error');
-        
-        input.parentElement.querySelector(".input-message-error").innerHTML = showErrorMessage(inputType, input);
+        input.parentElement.querySelector(".input-message-error").innerHTML = showErrorMessage(dataType, input);
+        input.classList.add('errorAlert');
     }
 }
 //data-type name y message

@@ -43,11 +43,6 @@
       </header>
         <form class="formContainer">
             <fieldset class="loginForm">   
-                <!-- <div class="catLogo mobile1"></div>
-                <div class="catLogo mobile2"></div>
-                <div class="catLogo tablet"></div>
-                <div class="catLogo desktop1"></div>
-                <div class="catLogo desktop2"></div> -->
               <ul class="form_inputs">
                 
                 <h2 class="form__title destacado">Inicio de Sesion</h2>
@@ -64,7 +59,7 @@
                     data-type="email"
                   />
                   <label for="loginForm_email">Enter email</label>
-                  <article class="input-message-error">El correo no es el correcto</article>
+                  <span class="input-message-error"> </span>
 
                 </li>
                 <li class="inputContainer">
@@ -80,7 +75,7 @@
                     data-type="password"
                   />
                   <label for="loginForm_password">Enter password</label>
-                  <span class="input-message-error">Ingresa la contraseña correcta</span>
+                  <span class="input-message-error"></span>
 
                 </li>
                 <a href="./products.html" class="entrar btn">Entrar</a>
@@ -143,13 +138,13 @@
               <input type="text" data-type="name" pattern="[\s\S]{7,40}" class="form__input inputValidate input" id="contactUs_inputName" required="required">
               <label for="contactUs_inputName">Nombre</label>
 
-              <span class="input-message-error" >Ingresa un nombre y un apellido</span>
+              <span class="input-message-error"> </span>
           </div>
           <div class="inputBox">
               <textarea data-type="message" class="form__textarea inputValidate input" id="contactUs_inputMessage" cols="30" rows="5" maxlength="100" minlength="10" required="required"></textarea>
               <label for="contactUs_inputMessage">Escribe tu mensaje</label>
 
-              <span class="input-message-error">El mensaje es muy corto</span>
+              <span class="input-message-error"> </span>
           </div>
           <button class="form__btn btn"><span>Enviar</span><i></i></button>
       </form>
