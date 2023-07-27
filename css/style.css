@@ -144,3 +144,18 @@
 }
 
 
+/*validaciones css*/
+
+.input-message-error{
+    /* display: none; */
+    color: var(--fontLightColor);
+    text-shadow: 0px 0px 5px var(--botonRojo);
+    font-weight: 700;
+    font-family: var(--starTitle);
+    text-align: center;
+    padding: .5rem 0 0;
+    letter-spacing: 1.5px;
+}
+.errorAlert{
+    border: 2.75px solid var(--botonRojo);
+}
