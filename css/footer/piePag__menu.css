@@ -1,43 +1,48 @@
-.piePAg__item_link{
+.piePAg__item_link {
     color: var(--fontDarkColor);
     font-weight: 600;
-
-    & span {
-        color: var(--backgroundLightBlue);
-        
-        &:hover{
-            color: var(--fontDarkColor);
-            background-color: var(--backgroundLightBlue);
-            font-size: calc(100% + 1vh);
-            padding: 0 .3rem;
-        }
-    }
 }
+
+.piePAg__item_link>span {
+    color: var(--backgroundLightBlue);
+    transition: all .3s;
+}
+
+.piePAg__item_link>span:hover {
+    color: var(--fontDarkColor);
+    background-color: var(--backgroundLightBlue);
+    font-size: calc(100% + 1vh);
+    padding: 0 .3rem;
+}
+
+
 
 @media screen and (min-width:0) {
-    .piePAg__item_link{
+    .piePAg__item_link {
         color: var(--fontDarkColor);
         font-weight: 600;
-    
-        & span {
-            font-size: .8rem;
-        }
     }
+
+    .piePAg__item_link>span {
+        font-size: .8rem;
+    }
+
 }
+
 @media screen and (min-width:410px) {
-    .piePAg__item_link{
-    
-        & span {
-            font-size: 1rem;
-        }
+    .piePAg__item_link {}
+
+    .piePAg__item_link>span {
+        font-size: 1rem;
+
     }
 }
+
 @media screen and (min-width:1220px) {
-    .piePAg__item_link{
-    
-        & span {
-            font-size: 1.2rem;
-        }
+    .piePAg__item_link {}
+
+    .piePAg__item_link>span {
+        font-size: 1.2rem;
+
     }
 }
-  

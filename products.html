@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="./css/footer/footerLogo.css" />
   <link rel="stylesheet" href="./css/footer/piePag__menu.css" />
   <link rel="stylesheet" href="./css/footer/piePag__form.css" />
+  <link rel="stylesheet" href="./css/effectsCSS/formFooter.css">
 </head>
 
 <body>
@@ -59,7 +60,10 @@
         </section>
         <section class="menu__busqueda">
           <input type="text" class="menu__barraBusqueda input" placeholder="🔎  ¿Que deseas buscar?">
-      </section>
+        </section>
+      </div>
+      <div class="menuBienvenido">
+        <h1>Inicio</h1>
       </div>
     </header>
 
@@ -287,50 +291,78 @@
           </li>
         </nav>
     </div>
-    </section>
-    </div>
-    <footer class="piePag">
+    
+    <footer class="piePag bodyFont">
       <section class="piePag__logo logoBox">
-        <img class="piePag__logo_logo logoPic" alt="Logo PixelKitty Store" src="./assets/logoCat.png" />
+        <img
+          class="piePag__logo_logo logoPic"
+          alt="Logo PixelKitty Store"
+          src="./assets/logoCat.png"
+        />
         <p class="piePag__logo_leyenda logoLeyenda">
-          <span class="piePag__logo_leyenda_text logoText piedPag">Pixel</span>
-          <span class="piePag__logo_leyenda_text logoText piedPag">Kitty</span>
-          <span class="piePag__logo_leyenda_text logoText piedPag">Store</span>
+          <span class="piePag__logo_leyenda_text logoText piedPag"
+            >Pixel</span
+          >
+          <span class="piePag__logo_leyenda_text logoText piedPag"
+            >Kitty</span
+          >
+          <span class="piePag__logo_leyenda_text logoText piedPag"
+            >Store</span
+          >
         </p>
       </section>
-
       <nav class="piePag__menu">
         <li class="piePag__item">
-          <a href="" class="piePAg__item_link"><span> Política de Privacidad </span></a>
+          <a href="" class="piePAg__item_link"
+            ><span> Política de Privacidad </span></a
+          >
         </li>
         <li class="piePag__item">
-          <a href="" class="piePAg__item_link"><span> Programa de fidelidad </span></a>
+          <a href="" class="piePAg__item_link"
+            ><span> Programa de fidelidad </span></a
+          >
         </li>
         <li class="piePag__item">
-          <a href="" class="piePAg__item_link"><span> Nuestras tiendas </span></a>
+          <a href="" class="piePAg__item_link"
+            ><span> Nuestras tiendas </span></a
+          >
         </li>
         <li class="piePag__item">
-          <a href="" class="piePAg__item_link"><span> Quiero ser franquiciado </span></a>
+          <a href="" class="piePAg__item_link"
+            ><span> Quiero ser franquiciado </span></a
+          >
         </li>
         <li class="piePag__item">
           <a href="" class="piePAg__item_link"><span> Anúncie aquí </span></a>
         </li>
         <li class="piePag__item">
-          <a href="" class="piePAg__item_link"><span> Quienes somos </span></a>
+          <a href="" class="piePAg__item_link"
+            ><span> Quienes somos </span></a
+          >
         </li>
       </nav>
       <form class="contactUs">
         <p class="form__title destacado"><span>Hable con nosotros</span></p>
-        <input type="text" class="form__input input" placeholder="Nombre" required />
-        <textarea class="form__textarea input" id="" cols="30" rows="5" placeholder="Escribe tu mensaje"
-          required></textarea>
+        <div class="inputBox">
+            <input type="text" data-type="name" pattern="[\s\S]{7,40}" class="form__input inputValidate input" id="contactUs_inputName" required="required">
+            <label for="contactUs_inputName">Nombre</label>
+
+            <span class="input-message-error"> </span>
+        </div>
+        <div class="inputBox">
+            <textarea data-type="message" class="form__textarea inputValidate input" id="contactUs_inputMessage" cols="30" rows="5" maxlength="100" minlength="10" required="required"></textarea>
+            <label for="contactUs_inputMessage">Escribe tu mensaje</label>
+
+            <span class="input-message-error"> </span>
+        </div>
         <button class="form__btn btn"><span>Enviar</span><i></i></button>
       </form>
     </footer>
+    
   </main>
   <div class="rodapie">
     <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
   </div>
 </body>
-
+<script src="./js/formValidation.js"></script>
 </html>

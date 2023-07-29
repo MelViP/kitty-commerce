@@ -74,11 +74,12 @@
     transition: all .5s ease-in-out;
     cursor: pointer;
     letter-spacing: 2px;
-
-    &:hover {
-        transform: scale(1.1);
-    }
 }
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
 
 
 /*areas de input texto*/
@@ -87,60 +88,64 @@
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
-
-    &:focus {
-        outline: none;
-    }
 }
+
+.input:focus {
+    outline: none;
+}
+
 
 /*logo*/
 .logoBox {
     display: flex;
     gap: 1rem;
-
-    & .logoPic {
-        /* background: url(/assets/logoCat.png) no-repeat; */
-        /* background-size: contain; */
-        -webkit-filter: drop-shadow(3px 3px 2px var(--neonGreen));
-        filter: drop-shadow(5px 5px 1px var(--neonGreen));
-    }
-
-    & .logoLeyenda {
-        font-weight: 500;
-        font-family: var(--logoFont);
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        color: var(--backgroundLightBlue);
-
-        &:hover {
-            cursor: crosshair;
-        }
-    }
-
-    & .logoText {
-        transition: all .2s;
-
-        &:first-child:hover {
-            background: -webkit-linear-gradient(45deg, #e32c4a, purple);
-            background: linear-gradient(45deg, #e32c4a, purple);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-
-        &:nth-child(2) {
-            background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
-            background: linear-gradient(45deg, #15d6eb, #1dca02);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-    }
-
 }
+
+.logoPic {
+    /* background: url(/assets/logoCat.png) no-repeat; */
+    /* background-size: contain; */
+    -webkit-filter: drop-shadow(3px 3px 2px var(--neonGreen));
+    filter: drop-shadow(5px 5px 1px var(--neonGreen));
+}
+
+.logoLeyenda {
+    font-weight: 500;
+    font-family: var(--logoFont);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: var(--backgroundLightBlue);
+}
+
+.logoLeyenda:hover {
+    cursor: crosshair;
+}
+
+
+.logoText {
+    transition: all .2s;
+}
+
+.logoText:first-child:hover {
+    background: -webkit-linear-gradient(45deg, #e32c4a, purple);
+    background: linear-gradient(45deg, #e32c4a, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.logoText:nth-child(2) {
+    background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
+    background: linear-gradient(45deg, #15d6eb, #1dca02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+
 
 /*rodapie*/
 
@@ -204,7 +209,8 @@
             border-bottom: 1px solid var(--botonRojo);
         } */
 }
-.input-message-error:focus{
+
+.input-message-error:focus {
     display: none;
 }
 
@@ -213,6 +219,7 @@
     animation: shake .5s infinite ease-in-out;
     /* background-color: var(--botonRojo); */
 }
+
 .errorAlert:focus {
     animation: none;
-  }
+}
