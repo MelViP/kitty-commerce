@@ -12,12 +12,18 @@ a.home{
     
 } */
 .galeria__productos_box{
-    row-gap: 6rem;
+    display: flex;
+    gap: 6rem;
 }
-.material-symbols-outlined{
+.galeria__productos_items{
+    margin-bottom: 3rem;
+}
+.galeria__productos_items>span{
     position: absolute;
+    z-index: 1;
     top: 2%;
-    color: aliceblue;
+    color: var(--fontLightColor);
+    filter: drop-shadow(-1px 1px 5px var(--shadowDark));
     display: block;
     cursor: pointer;
 }
@@ -27,8 +33,4 @@ a.home{
 }
 .delete_products{
     right: 20%;
-}
-
-.material-symbols-outlined{
-    text-shadow: (0px 0px black);
 }
