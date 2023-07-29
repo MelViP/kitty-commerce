@@ -8,30 +8,30 @@
     background-position: center;
 }
 .menu__logo_leyenda_text{
+    color: var(--fontDarkColor);
     /* margin-bottom: .5rem; */
 }
 
 @media screen and (min-width:0) {
-    .menu__logo{
-        flex-direction: row;
-        
+    .menu__logo{     
+        padding-left: 1rem;   
 
         & .menu__logo_logo{ 
             height: 3rem;
-            width: 3rem;
+            width: 4rem;
         }
 
         & .menu__logo_leyenda{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            /* justify-content: center; */
             line-height: 70%;
         }
 
         & .menu__logo_leyenda_text{
             display: flex;
             font-size: .5rem;
-            flex-direction: column;
+            /* flex-direction: column; */
         }
     }
 }
@@ -42,7 +42,7 @@
 
         & .menu__logo_logo{ 
             height: 4rem;
-            width: 4rem;
+            width: 5rem;
         }
 
         & .menu__logo_leyenda{

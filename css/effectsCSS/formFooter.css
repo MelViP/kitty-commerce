@@ -1,0 +1,43 @@
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    /* background-color: var(--backgroundDirt); */
+    border-radius: 0 1rem .5rem;
+}
+.inputBox span{
+    color: rgba(128, 128, 128, 0.916);
+    position: absolute;
+    /* left: 0; */
+    pointer-events: none;
+    padding-top: 1.75vh;
+    padding-left: .5vw;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+    /*si input es valido aplicar lo siguiente a span*/
+    color: var(--backgroundLightBlue);
+    transform: translateX(10px) translateY(-10px);
+    font-size: calc(100% - .75vh);
+    padding: 1vh 1vw 0;
+    background-color: var(--backgroundDark);
+    border-left: 1px solid var(--neonGreen);
+    border-right: 1px solid var(--neonGreen);
+    letter-spacing: .1rem;
+    z-index: 1;
+}
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus{
+    border: 2px solid var(--neonGreen);  
+    border-radius: 5px;  
+}

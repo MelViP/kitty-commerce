@@ -1,0 +1,30 @@
+a.home{
+    cursor: pointer;
+}
+.galeria.productos{
+    margin-top: 6rem;
+}
+/* .galeria__productos_items:hover{
+    
+    transform: scale(0);
+    background-color: rgba(240, 248, 255, 0.6);
+    box-shadow: 6px 8px 18px var(--backgroundLightBlue);
+    
+} */
+.galeria__productos_box{
+    row-gap: 6rem;
+}
+.material-symbols-outlined{
+    position: absolute;
+    top: 2%;
+    color: aliceblue;
+    display: block;
+    cursor: pointer;
+}
+.edit_products{
+    right: 4%;
+    
+}
+.delete_products{
+    right: 20%;
+}

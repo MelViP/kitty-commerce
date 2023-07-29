@@ -1,3 +1,4 @@
+
 .galeria__productos_items{
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     transition: all .5s;
     border-radius: 0 1rem 0 0;
     border: 2px solid transparent;
-    background-color: rgba(240, 248, 255, 0.4);
+    background-color: rgba(240, 248, 255, 0.6);
 
     &:hover{
         transform: scale(1.1);
@@ -17,33 +18,14 @@
         width: 100%;
     }
     & .galeria__productos__textCard{
+        display: flex;
         margin: .5rem;
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        height: 100%;
     }
-    
-    .galeria__productos_items__nombre
-    .galeria__productos_items__precio
-    
-    & .galeria__productos--link{
-        color: var(--fontDarkColor);
-        background-color: var(--backgroundLightBlue);
-        width: fit-content;
-        align-items: flex-end;
-    }
-    
-    
-    & .galeria__productos--verTodo{
-        border: 2px solid transparent;
-        border-radius: .5rem;
-        background-color: rgba(240, 255, 255, 0.5);
-        transition: all .2s;
-    
-        &:hover{
-            font-weight: 600;
-        }
-    }
+
 }
 
 @media screen and (min-width:0px) {

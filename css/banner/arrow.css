@@ -1,0 +1,31 @@
+.callToAction{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes bouncy{  
+    0%{
+        /* position inicial */
+        transform: translateY(0);
+    }
+    50%{
+        /* posicion arriba */
+        transform: translateY(25px);
+    }
+    100%{
+/* posicion origial de nuevo */
+        transform: translateY(0);}
+}
+
+.arrowDown{
+    /* position: absolute; */
+    /* top: 34.8125rem; */
+    width: fit-content;
+    height: 10vh;
+    font-size: 10vh;
+    color: var(--fontLightColor);
+    font-family: var(--starTitle);
+
+    animation: bouncy 1s ease-in-out infinite;
+}
+

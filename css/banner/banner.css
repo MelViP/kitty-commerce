@@ -1,7 +1,8 @@
 .banner{
+    /* margin-top: 6rem; */
     background: url(/assets/cats__stores.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     box-shadow: inset 0 0 25px #1b1919;
 
     & .banner__box{
@@ -11,10 +12,12 @@
     }
 }
 
+
 @media screen and (min-width:0) {
     .banner{
         padding: 5rem 1rem 1rem;
         background-position: bottom, center;
+        margin-top: 4.95rem;
         margin-bottom: 3.75rem;
 
         & .banner__box{
@@ -26,13 +29,15 @@
     .banner{
         padding: 6rem 1rem 1.735rem;
         margin-bottom: 1.25rem;
+        margin-top:6rem;
     }
 }
 @media screen and (min-width:710px) {
     .banner{
-        padding: 8rem 2.935rem 1.735rem;
+        padding: 9rem 2.935rem 1.735rem;
         background-position: right, bottom;
         margin-bottom: 1.75rem;
+        margin-top: 6rem;
     }
 }
 @media screen and (min-width:1024px) {
@@ -47,7 +52,7 @@
 }
 @media screen and (min-width:1224px) {
     .banner{
-        padding: 14rem 3.35rem 5rem;
+        padding: 20rem 3.35rem 5rem;
         background-position: bottom;
 
         & .banner__box{

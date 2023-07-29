@@ -1,0 +1,24 @@
+.formContainer{
+    
+      
+    
+    margin: 6vh auto;
+    /* width: 70vw; */
+    
+}
+.loginForm{
+    display: flex;
+    justify-content: center;
+    padding: 6vh 4vw;
+
+    /* width: ;  */
+
+    border-radius: 2.375rem;
+    background-color: rgba(167, 184, 145, 0.917);
+    box-shadow: 5px 5px 10px #fbf8dfd7, -5px -5px 10px #fbf8dfd7;
+    transition: all .5s;
+
+    &:hover{
+        box-shadow: 10px 10px 25px #fbf8dfd7, -10px -10px 25px #fbf8dfd7, 9px -9px 25px #fbf8dfd7, -9px 9px 25px #fbf8dfd7;
+    }
+}
