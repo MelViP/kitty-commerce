@@ -3,7 +3,10 @@
 <span 
     class="material-symbols-outlined delete_products">
      delete
-</span> */
+</span> 
+cardtitle
+etc
+etc*/
 
 const deleteIcon = () => {
     const span = document.createElement('span');
@@ -17,3 +20,4 @@ const deleteCard = (event) =>{
     console.log(parent);
     parent.remove;
 }
+
