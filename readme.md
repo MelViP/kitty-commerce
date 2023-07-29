@@ -8,7 +8,7 @@ This is a model of a e-commerce about cat products.
 
 Presented as ONE-Alura challenge G5
 
-https://melvip.github.io/my_e-commerce/
+http://www.kitty-commerce.com/
 
 
 ## Lessons Learned
