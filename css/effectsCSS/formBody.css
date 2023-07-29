@@ -9,7 +9,7 @@
         border-radius: 1rem;
         padding: .5rem;
     }
-    .inputContainer span{
+    .inputContainer label{
         color: rgba(128, 128, 128, 0.916);
         position: absolute;
         /* left: 0; */
@@ -19,8 +19,8 @@
         text-transform: uppercase;
         transition: all .5s;
     }
-    .formInput:valid ~ span,
-    .formInput:focus ~ span
+    .formInput:valid ~ label,
+    .formInput:focus ~ label
     {
         /*si input es valido aplicar lo siguiente a span*/
         color: var(--fontDarkColor);
@@ -36,7 +36,7 @@
     }
     .formInput:valid,
     .formInput:focus{
-        border: 2.75px solid var(--botonRojo);  
+        border: 2.75px solid var(--botonPurpura);  
         border-radius: 5px;  
 }
 
@@ -50,8 +50,4 @@ a.entrar, a.add_product{
         padding: 2vh 0;
         /* font-size: 2.55vh; */
 }
-
-
-
-/*RESPONSIVE*/
 

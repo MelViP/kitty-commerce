@@ -2,14 +2,15 @@
 .galeria__productos_items__precio */
 
 .galeria__productos--link {
+  /* display: none; */
   margin-top: auto;
   color: var(--fontDarkColor);
   background-color: var(--backgroundLightBlue);
   width: fit-content;
   align-items: flex-end;
-
-  &:hover{
+}
+.galeria__productos--link:hover{
     color: red;
   }
-}
+
 

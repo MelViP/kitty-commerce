@@ -43,11 +43,6 @@
       </header>
         <form class="formContainer">
             <fieldset class="loginForm">   
-                <!-- <div class="catLogo mobile1"></div>
-                <div class="catLogo mobile2"></div>
-                <div class="catLogo tablet"></div>
-                <div class="catLogo desktop1"></div>
-                <div class="catLogo desktop2"></div> -->
               <ul class="form_inputs">
                 
                 <h2 class="form__title destacado">Inicio de Sesion</h2>
@@ -57,20 +52,31 @@
                 <li class="inputContainer ">
                   <!-- <span class="material-symbols-rounded">account_circle</span> -->
                   <input
-                    class="formInput"
+                    class="formInput inputValidate"
                     type="email"
                     required="required"
+                    id="loginForm_email"
+                    data-type="email"
                   />
-                  <span>Enter email</span>
+                  <label for="loginForm_email">Enter email</label>
+                  <span class="input-message-error"> </span>
+
                 </li>
                 <li class="inputContainer">
                   <!-- <span class="material-symbols-rounded">password</span> -->
                   <input
-                    class="formInput"
+                    class="formInput inputValidate"
                     type="password"
                     required="required"
+                    minlength="6" maxlength="12" 
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$" 
+                    title="Al menos 6 caracteres, una mayuscula y una minuscula y no debe contener caracteres especiales"
+                    id="loginForm_password"
+                    data-type="password"
                   />
-                  <span>Enter password</span>
+                  <label for="loginForm_password">Enter password</label>
+                  <span class="input-message-error"></span>
+
                 </li>
                 <a href="./products.html" class="entrar btn">Entrar</a>
               </ul>
@@ -95,7 +101,6 @@
             >
           </p>
         </section>
-
         <nav class="piePag__menu">
           <li class="piePag__item">
             <a href="" class="piePAg__item_link"
@@ -129,19 +134,24 @@
         <form class="contactUs">
           <p class="form__title destacado"><span>Hable con nosotros</span></p>
           <div class="inputBox">
-              <input type="text" class="form__input input" required="required">
-              <span>Nombre</span>
+              <input type="text" data-type="name" pattern="[\s\S]{7,40}" class="form__input inputValidate input" id="contactUs_inputName" required="required">
+              <label for="contactUs_inputName">Nombre</label>
+
+              <span class="input-message-error"> </span>
           </div>
           <div class="inputBox">
-              <textarea class="form__textarea input" id="" cols="30" rows="5" required="required"></textarea>
-              <span>Escribe tu mensaje</span>
+              <textarea data-type="message" class="form__textarea inputValidate input" id="contactUs_inputMessage" cols="30" rows="5" maxlength="100" minlength="10" required="required"></textarea>
+              <label for="contactUs_inputMessage">Escribe tu mensaje</label>
+
+              <span class="input-message-error"> </span>
           </div>
           <button class="form__btn btn"><span>Enviar</span><i></i></button>
-      </form>
+        </form>
       </footer>
       <div class="rodapie">
         <p class="rodapie__credits">Hecho con el <span>🫀</span> por Mel</p>
       </div>
     </main>
+    <script src="./js/formValidation.js"></script>
   </body>
 </html>

@@ -65,19 +65,19 @@
           <h1>Agregar nuevo producto</h1>
           <section class="inputContainer">
             <input class="formInput input" type="text" required="required"/>
-            <span>URL de la imagen</span>
+            <label>URL de la imagen</label>
           </section>
           <section class="inputContainer">
             <input class="formInput input" type="text" required="required"/>
-            <span>Categoria</span>
+            <label>Categoria</label>
           </section>
           <section class="inputContainer">
             <input class="formInput input" type="text"/ required="required">
-            <span>Nombre de producto</span>
+            <label>Nombre de producto</label>
           </section>
           <section class="inputContainer ">
             <input class="formInput input" type="text" required="required"/>
-            <span>Precio del producto</span>
+            <label>Precio del producto</label>
           </section>
           <section class="inputContainer">
             <textarea class="formInput input"
@@ -85,7 +85,7 @@
             cols="30"
             rows="10"
             ></textarea>
-            <span>Descripcion del producto</span>
+            <label>Descripcion del producto</label>
           </section>
           <a class="add_product btn">Agregar producto</a>
         </fieldset>
@@ -143,12 +143,16 @@
         <form class="contactUs">
           <p class="form__title destacado"><span>Hable con nosotros</span></p>
           <div class="inputBox">
-              <input type="text" class="form__input input" required="required">
-              <span>Nombre</span>
+              <input type="text" data-type="name" pattern="[\s\S]{7,40}" class="form__input inputValidate input" id="contactUs_inputName" required="required">
+              <label for="contactUs_inputName">Nombre</label>
+
+              <span class="input-message-error"> </span>
           </div>
           <div class="inputBox">
-              <textarea class="form__textarea input" id="" cols="30" rows="5" required="required"></textarea>
-              <span>Escribe tu mensaje</span>
+              <textarea data-type="message" class="form__textarea inputValidate input" id="contactUs_inputMessage" cols="30" rows="5" maxlength="100" minlength="10" required="required"></textarea>
+              <label for="contactUs_inputMessage">Escribe tu mensaje</label>
+
+              <span class="input-message-error"> </span>
           </div>
           <button class="form__btn btn"><span>Enviar</span><i></i></button>
       </form>
@@ -157,5 +161,6 @@
     <div class="rodapie">
       <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
     </div>
+    <script src="./js/formValidation.js"></script>
   </body>
 </html>

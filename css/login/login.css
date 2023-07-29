@@ -19,12 +19,12 @@ input{
     border: 2px solid transparent;
     background-color: transparent;
     /* min-width: 50%; */
-
-    &:focus{
+}
+input:focus{
         outline: none;
     }
 
-}
+
 
 .rodapie{
     font-family: var(--credits);

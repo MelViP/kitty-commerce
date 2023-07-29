@@ -1,12 +1,13 @@
-:root{
+:root {
     --fontDarkColor: #464646;
     --fontLightColor: #EAF2FD;
     --shadowDark: #464646;
-    --backgroundDark: rgb(5, 23, 0);;
+    --backgroundDark: rgb(5, 23, 0);
+    ;
     --backgroundWhite: #FFFFFF;
     --backgroundDirt: #e1c6abe7;
     --backgroundLightBlue: #d3d6dd;
-    --backLightBlueTransparent:#eaf2fd9e;
+    --backLightBlueTransparent: #eaf2fd9e;
     --botonRojo: #e32b4a;
     --botonPurpura: #800080;
     --niceGreen: #dafcccc4;
@@ -18,118 +19,133 @@
     --text: 'MF The Curious Cat';
     --credits: 'KG HAPPY';
 }
+
 @font-face {
     font-family: 'KG HAPPY';
     src: url(/assets/fonts/KGHAPPY.ttf);
 }
+
 @font-face {
     font-family: 'Mf The Curious Cat';
     src: url(/assets/fonts/MfTheCuriousCat-eY56.ttf);
 }
+
 @font-face {
     font-family: 'SimpleCat';
     src: url(/assets/fonts/Simplecat-d9xpV.otf);
 }
-.whole{
+
+.whole {
     background: url(/assets/PaperTexture.png) repeat;
     background-size: contain;
     background-color: var(--backgroundDirt);
     /* font-weight: 700; */
     letter-spacing: 2px;
 }
-  
+
 /*titulos grandes*/
-.banner__titulo, .titles{
+.banner__titulo,
+.titles {
     font-family: var(--starTitle);
 }
-.galeria__productos--title{
+
+.galeria__productos--title {
     font-weight: 700;
     color: var(--fontDarkColor);
-    font-family:  var(--titles);
+    font-family: var(--titles);
 }
-.destacado{
+
+.destacado {
     font-weight: 700;
 }
 
 /*cuerpo*/
-.bodyFont{
+.bodyFont {
     font-family: var(--text);
     font-weight: 700;
     letter-spacing: 1.5;
 }
 
 /*botones general*/
-.btn{
+.btn {
     font-family: var(--text);
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
     cursor: pointer;
     letter-spacing: 2px;
+}
 
-    &:hover{
-        transform: scale(1.1);
-    }
+.btn:hover {
+    transform: scale(1.1);
 }
 
 
+
 /*areas de input texto*/
-.input{
+.input {
     font-family: var(--text);
     border: 2px solid transparent;
     background-color: transparent;
     transition: all .5s ease-in-out;
-
-    &:focus{
-        outline: none;
-    }
 }
+
+.input:focus {
+    outline: none;
+}
+
 
 /*logo*/
-.logoBox{
+.logoBox {
     display: flex;
     gap: 1rem;
-
-    & .logoPic{
-        /* background: url(/assets/logoCat.png) no-repeat; */
-        /* background-size: contain; */
-        -webkit-filter: drop-shadow(3px 3px 2px var(--neonGreen));
-    filter: drop-shadow(5px 5px 1px var(--neonGreen));
-    }
-    & .logoLeyenda{
-        font-weight: 500;
-        font-family: var(--logoFont);
-        text-transform: uppercase;
-        font-weight: 700;
-        letter-spacing: .2rem;
-        color: var(--backgroundLightBlue);
-
-        &:hover{
-            cursor: crosshair;
-        }
-    }
-    & .logoText{
-        transition: all .2s;
-    
-        &:first-child:hover {
-            background: -webkit-linear-gradient(45deg, #e32c4a, purple);
-            background: linear-gradient(45deg, #e32c4a, purple);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-        &:nth-child(2) {
-            background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
-            background: linear-gradient(45deg, #15d6eb, #1dca02);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            color: transparent;
-        }
-    }
-
 }
+
+.logoPic {
+    /* background: url(/assets/logoCat.png) no-repeat; */
+    /* background-size: contain; */
+    -webkit-filter: drop-shadow(3px 3px 2px var(--neonGreen));
+    filter: drop-shadow(5px 5px 1px var(--neonGreen));
+}
+
+.logoLeyenda {
+    font-weight: 500;
+    font-family: var(--logoFont);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    color: var(--backgroundLightBlue);
+}
+
+.logoLeyenda:hover {
+    cursor: crosshair;
+}
+
+
+.logoText {
+    transition: all .2s;
+}
+
+.logoText:first-child:hover {
+    background: -webkit-linear-gradient(45deg, #e32c4a, purple);
+    background: linear-gradient(45deg, #e32c4a, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.logoText:nth-child(2) {
+    background: -webkit-linear-gradient(45deg, #15d6eb, #1dca02);
+    background: linear-gradient(45deg, #15d6eb, #1dca02);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+
 
 /*rodapie*/
 
@@ -144,3 +160,66 @@
 }
 
 
+/*validaciones css*/
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.input-message-error {
+    /* display: none; */
+    color: var(--fontLightColor);
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: var(--text);
+    text-align: center;
+    padding: .5rem 0 0;
+    letter-spacing: 1.5px;
+    text-align: center;
+    width: fit-content;
+    /* background-color: var(--botonRojo); */
+    text-shadow: 0px 0px var(--botonRojo),
+        1px 1px var(--botonRojo),
+        -1px 1px var(--botonRojo);
+    /* & span{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid var(--botonRojo);
+        } */
+}
+
+.input-message-error:focus {
+    display: none;
+}
+
+.errorAlert {
+    border: 2.75px solid var(--botonRojo);
+    animation: shake .5s infinite ease-in-out;
+    /* background-color: var(--botonRojo); */
+}
+
+.errorAlert:focus {
+    animation: none;
+}

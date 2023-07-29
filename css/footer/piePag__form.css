@@ -1,23 +1,28 @@
-.form__title{ /*hable con nosotros*/
+.form__title {
+    /*hable con nosotros*/
     font-weight: 600;
-
-    & span{
-        color: var(--backgroundLightBlue);
-    }
 }
+
+.form__title>span {
+    color: var(--backgroundLightBlue);
+}
+
 
 
 .form__input,
-.form__textarea{
+.form__textarea {
     background-color: #f0f8ffae;
-    border-radius: .2rem .8rem .2rem;    box-shadow: 0px 0px 5px;
-
-    &:hover{
-    box-shadow: 0px 0px 5px var(--neonGreen);
-    }
+    border-radius: .2rem .8rem .2rem;
+    box-shadow: 0px 0px 5px;
 }
 
-.form__btn{
+.form__input:hover,
+.form__textarea:hover {
+    box-shadow: 0px 0px 8px var(--neonGreen);
+}
+
+
+.form__btn {
     /* border-radius: 3rem; */
     background-color: var(--fondoTransparenteGreen);
     font-weight: 600;
@@ -25,50 +30,62 @@
 }
 
 @media screen and (min-width:0) and (max-width:409px) {
-    .form__btn{
+    .form__btn {
         border-radius: 1rem;
         padding: .35rem;
     }
-    .form__input{
-        height: 2rem;
+
+    .form__input,
+    .form__textarea {
+        padding-top: 1rem;
+        /* height: 2rem; */
     }
 }
+
 @media screen and (min-width:410px) {
-    .form__btn{
+    .form__btn {
         border-radius: 1rem;
         padding: .35rem;
     }
-    .form__title{
-        & span{
+
+    .form__title>span {
         font-size: 1rem;
-        }
     }
 
+    .form__input,
+    .form__textarea {
+        padding-top: 1rem;
+        /* height: 2rem; */
+    }
 }
+
+
+
+
 @media screen and (min-width:710px) {
-    .form__btn{
+    .form__btn {
         padding: .35rem;
     }
-    .form__title{
-        & span{
-        font-size: 1rem;
-        }
-    }
 
+    .form__title>span {
+        font-size: 1rem;
+    }
 }
+
+
+
 @media screen and (min-width:1024px) {
-    .form__btn{
+    .form__btn {
         border-radius: 1.85rem;
         padding: .875rem;
     }
-    .form__title{
-        & span{
+
+    .form__title>span {
         font-size: 1.25rem;
-        }
     }
     .form__input,
-    .form__textarea{
+    .form__textarea {
         padding: .85rem;
     }
-
 }
+

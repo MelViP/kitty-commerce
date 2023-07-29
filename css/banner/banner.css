@@ -1,62 +1,70 @@
-.banner{
+.banner {
     /* margin-top: 6rem; */
     background: url(/assets/cats__stores.jpg);
     background-size: cover;
     background-attachment: scroll;
     box-shadow: inset 0 0 25px #1b1919;
+}
 
-    & .banner__box{
-        display: flex;
-        flex-direction: column;
-        text-shadow: 1px 3px 15px black;
-    }
+.banner__box {
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 3px 15px black;
 }
 
 
+
 @media screen and (min-width:0) {
-    .banner{
+    .banner {
         padding: 5rem 1rem 1rem;
         background-position: bottom, center;
         margin-top: 4.95rem;
         margin-bottom: 3.75rem;
-
-        & .banner__box{
-            gap: 1rem;
-        }
     }
+
+    .banner__box {
+        gap: 1rem;
+    }
+
 }
+
 @media screen and (min-width:410px) {
-    .banner{
+    .banner {
         padding: 6rem 1rem 1.735rem;
         margin-bottom: 1.25rem;
-        margin-top:6rem;
+        margin-top: 6rem;
     }
 }
+
 @media screen and (min-width:710px) {
-    .banner{
+    .banner {
         padding: 9rem 2.935rem 1.735rem;
         background-position: right, bottom;
         margin-bottom: 1.75rem;
         margin-top: 6rem;
     }
 }
+
 @media screen and (min-width:1024px) {
-    .banner{
+    .banner {
         padding: 10rem 3.35rem 3rem;
         background-position: right, bottom;
-
-        & .banner__box{
-            gap: 1.5rem;
-        }
     }
+
+    .banner__box {
+        gap: 1.5rem;
+    }
+
 }
+
 @media screen and (min-width:1224px) {
-    .banner{
+    .banner {
         padding: 20rem 3.35rem 5rem;
         background-position: bottom;
-
-        & .banner__box{
-            gap: 1.5rem;
-        }
     }
+
+    .banner__box {
+        gap: 1.5rem;
+    }
+
 }
