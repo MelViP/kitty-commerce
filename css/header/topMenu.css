@@ -1,12 +1,13 @@
 .menu {
     position: fixed;
-    top: 0%;
+    top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     background: var(--backgroundDirt);
-    /* width: 100%; */
+    width: 100%;
     z-index: 1;
+    padding: 1rem 3rem;
     padding-bottom: .5rem;
 }
 
@@ -35,9 +36,8 @@
 
 @media screen and (min-width:0) {
     .menu {
-        /* align-items: center; */
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+        align-items: center;
+        padding: 1rem;
         gap: .5rem;
         width: 100vw;
     }
@@ -48,7 +48,7 @@
 
     .menu__btn_login {
         border-radius: 1.3rem;
-        margin-right: 1rem;
+        margin-right: 1.8rem;
     }
 
     .menu__btn_login__text {
@@ -69,7 +69,7 @@
     }
 
     .menu__btn_login {
-        margin-right: 14vw;
+        /* margin-right: 14vw; */
         border-radius: 2rem;
         padding: .8735rem;
     }
@@ -86,7 +86,7 @@
     }
 
     .menu__btn_login {
-        /* margin-right: 15.75vw; */
+        margin-right: 15.75vw;
     }
 
 }
@@ -114,7 +114,7 @@
         border-radius: 4rem;
         padding: 1rem;
         width: 8.735rem;
-        /* margin-right: 8.75vw; */
+        margin-right: 4vw;
     }
 
 

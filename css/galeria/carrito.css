@@ -1,0 +1,76 @@
+/*
+ <span class="carritoIcon material-symbols-sharp">
+     shopping_cart
+</span>
+*/
+
+.carritoIcon
+{
+    position: absolute;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    padding: .5rem;
+    font-size: 1rem;
+    color: var(--fontDarkColor);
+    background-color: var(--backgroundLightBlue);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all .5s;
+}
+.carritoIcon:hover
+{
+    transform: scale(2.1);
+    
+}
+/*
+<div class="menu_carrito">
+          <span class="carritoIconMenu material-symbols-sharp">
+            shopping_cart
+          </span>
+          <label for="carritoIcon">Productos</label>
+          a.contactoLink
+</div>
+*/
+
+.menu_carrito
+{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    font-family: var(--titles);
+    /* background-color: aliceblue; */
+    border-left: solid 1px;
+    border-right: solid 1px;
+    padding: 0 .5rem;
+}
+.carrito
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.menu_carrito>label,
+.carritoIconMenu,
+.contactoLink,
+.carrito,
+.categoria{
+    font-weight: 700;
+    color: var(--fontLightColor);
+    /* text-shadow: -1px 1px  1px var(--shadowDark); */
+}
+.contactoLink,
+.categoria
+{
+    border-left: solid 1px var(--shadowDark);
+    padding-left: 1rem;
+}
+
+/*responsive*/
+
+@media screen and (min-width:0) and (max-width:710px){
+    .menu_carrito > label
+    {
+        display: none;
+    }
+}
