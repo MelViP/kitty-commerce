@@ -66,31 +66,3 @@ function showErrorMessage(inputType, input){
 
     return message;
 };
-
-
-
-//para el CRUD con usuario 
-
-//validar  correo
-
-// function emailValidate(input){
-//     const correctEmail = 'admin@kittycommerce.com';
-//     if (input == correctEmail){
-//         // pasarle acces
-//         alert(`Bienvenido ${correctEmail}`)
-//     } else {
-//         console.log(errorMessage);
-//     }
-// }
-
-// //valida contra
-
-// function passwordValidate(input){
-//     const correctPw = '12345';
-//     if (input == correctPw){
-//         // pasarle acces
-//         alert(`Bienvenido ${correctPw}`)
-//     } else {
-//         console.log(errorMessage);
-//     }
-// }

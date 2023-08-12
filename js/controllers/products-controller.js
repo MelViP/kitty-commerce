@@ -18,7 +18,9 @@
 </li>
 */
 
-const agregarProd = (imagen, nombre, precio) => {
+import { productServices } from "../../service"
+
+const agregarProd = (imagen, nombre, precio, id) => {
   const linea = document.createElement("li");
   linea.classList.add("galeria__productos_items");
   const content = `
@@ -48,24 +50,11 @@ const agregarProd = (imagen, nombre, precio) => {
 
 const prodBox = document.querySelector('[data-box]')
 
-const http = new XMLHttpRequest();
-
-const productList = () => {
-    const promise = new Promise( (resolve,reject) => {
-  
-      http.open('GET', 'http://localhost:3000/perfil');
-  
-      http.send();
-  
-      http.onload = () => {
-        const response = JSON.parse(http.response);
-  
-        if (http.status >= 400) {
-          reject(response);
-        } else {
-          resolve(response);
-        }
-      };
+productServices.productList()
+  .then((data) => {
+    data.forEach( ( { imagen, nombre, precio, id } ) => {
+      // console.log(perfil)
+      const nuevaLinea = agregarProd( imagen, nombre, precio, id );
+      table.appendChild(nuevaLinea);
     });
-    return promise;
-  };
+  }).catch((error) => alert("Ocurrio un errorcito"));
