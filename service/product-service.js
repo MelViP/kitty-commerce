@@ -11,16 +11,9 @@ const addProduct = (imagen, nombre, precio) => {
   });
 };
 
-const deleteProduct = (id) => {
-  console.log(`eliminar a -----> ${id}`)
-  return fetch(`http://localhost:4000/productos/${id}`, {
-    method: "DELETE",
-  })
-}
+
 
 
 export const productServices = {
-  productList,
   addProduct,
-  deleteProduct,
 };

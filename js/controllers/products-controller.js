@@ -18,9 +18,9 @@
 </li>
 */
 
-import { productServices } from "../../service"
+import { productServices } from "../../service/product-service.js"
 
-const agregarProd = (imagen, nombre, precio, id) => {
+const agregarProd = (imagen, nombre, precio ) => { //id pending to add
   const linea = document.createElement("li");
   linea.classList.add("galeria__productos_items");
   const content = `
@@ -48,13 +48,13 @@ const agregarProd = (imagen, nombre, precio, id) => {
   return linea;
 };
 
-const prodBox = document.querySelector('[data-box]')
+const prodBox = document.querySelector('[data-productos]')
 
 productServices.productList()
   .then((data) => {
     data.forEach( ( { imagen, nombre, precio, id } ) => {
-      // console.log(perfil)
-      const nuevaLinea = agregarProd( imagen, nombre, precio, id );
+      // console.log(productos)
+      const nuevaLinea = agregarProd( imagen, nombre, precio );
       table.appendChild(nuevaLinea);
     });
   }).catch((error) => alert("Ocurrio un errorcito"));
