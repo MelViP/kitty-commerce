@@ -1,3 +1,6 @@
+import { v4 as uuidv4 } from 'uuid'; // Import uuid module and alias it as uuidv4
+
+
 const productList = () => fetch("http://localhost:4000/productos").then((response) => response.json());
 
 

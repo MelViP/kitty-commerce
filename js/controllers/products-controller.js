@@ -55,6 +55,6 @@ productServices.productList()
     data.forEach( ( { imagen, nombre, precio, id } ) => {
       // console.log(productos)
       const nuevaLinea = agregarProd( imagen, nombre, precio );
-      table.appendChild(nuevaLinea);
+      prodBox.appendChild(nuevaLinea);
     });
   }).catch((error) => alert("Ocurrio un errorcito"));
