@@ -3,19 +3,19 @@
       {
         "imagen": "./assets/products/catBlanket.png",
         "nombre": "Cotton cat blanket",
-        "precio": "$60",
+        "precio": "60",
         "id": 1
       },
       {
         "imagen": "./assets/products/catMug2.png",
         "nombre": "Another cat mug",
-        "precio": "$60",
+        "precio": "60",
         "id": 2
       },
       {
         "imagen": "./assets/products/luckyCat.png",
         "nombre": "Lucky cat",
-        "precio": "$60",
+        "precio": "60",
         "id": 3
       }
     ]

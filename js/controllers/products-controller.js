@@ -18,16 +18,12 @@
 </li>
 */
 
-import { productServices } from "../../service"
+import { productServices } from "../../service/product-service.js"
 
 const agregarProd = (imagen, nombre, precio, id) => {
   const linea = document.createElement("li");
   linea.classList.add("galeria__productos_items");
   const content = `
-    <span class="carritoIcon material-symbols-sharp">
-        shopping_cart
-    </span>
-
     <img class="galeria__productos_items__foto" src="${imagen}"/>
 
     <div class="galeria__productos__textCard">
