@@ -42,6 +42,8 @@ const agregarProd = (imagen, nombre, precio, id) => {
     `;
   linea.innerHTML = content;
   return linea;
+
+  console.log(linea)
 };
 
 const prodBox = document.querySelector('[data-productos]')
@@ -51,6 +53,6 @@ productServices.productList()
     data.forEach( ( { imagen, nombre, precio, id } ) => {
       // console.log(perfil)
       const nuevaLinea = agregarProd( imagen, nombre, precio, id );
-      table.appendChild(nuevaLinea);
+      prodBox.appendChild(nuevaLinea);
     });
   }).catch((error) => alert("Ocurrio un errorcito"));

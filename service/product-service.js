@@ -1,4 +1,6 @@
-const productList = () => fetch("http://localhost:3000/productos").then((response) => response.json());
+const productList = () => fetch("http://localhost:3000/productos")
+  .then((response) => response.json()
+);
 
 
 const addProduct = (imagen, nombre, precio) => {
