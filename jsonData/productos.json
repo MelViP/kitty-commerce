@@ -1,0 +1,118 @@
+{
+  "saludBienestar": [
+    {
+      "imagen": "../assets/products/catFood.png",
+      "nombre": "Comida de Gato Montero",
+      "precio": "60",
+      "id": 1
+    },
+    {
+      "imagen": "../assets/products/catToysacrame.png",
+      "nombre": "Macrame toy with catnip",
+      "precio": "60",
+      "id": 2
+    },
+    {
+      "imagen": "../assets/products/catToyscrath.png",
+      "nombre": "Scratch board grinding nail",
+      "precio": "60",
+      "id": 3
+    },
+    {
+      "imagen": "../assets/products/catPlate.png",
+      "nombre": "Plate design for the cat house",
+      "precio": "60",
+      "id": 4
+    },
+    {
+      "imagen": "../assets/products/catnip.png",
+      "nombre": "Natural Catnip",
+      "precio": "60",
+      "id": 5
+    },
+    {
+      "imagen": "../assets/products/catBrush.png",
+      "nombre": "Fine hair brush",
+      "precio": "60",
+      "id": 6
+    }
+  ],
+  "camisetas": [
+    {
+      "imagen": "../assets/products/catTdad.png",
+      "nombre": "Cat dad T-shirt",
+      "precio": "60",
+      "id": 1
+    },
+    {
+      "imagen": "../assets/products/catTsweeter.png",
+      "nombre": "Sweeter cat mama",
+      "precio": "60",
+      "id": 2
+    },
+    {
+      "imagen": "../assets/products/catTpawsitive.png",
+      "nombre": "Stay Pawsitive",
+      "precio": "60",
+      "id": 3
+    },
+    {
+      "imagen": "../assets/products/catTschrodinger.png",
+      "nombre": "Schrodinger cat T-shirt",
+      "precio": "60",
+      "id": 4
+    }
+    ,
+    {
+      "imagen": "../assets/products/catTworkout.png",
+      "nombre": "I just want to workout and hang with my cat",
+      "precio": "60",
+      "id": 5
+    },
+    {
+      "imagen": "../assets/products/catTlocalstreetcat.png",
+      "nombre": "Support your local street cat shirt",
+      "precio": "60",
+      "id": 6
+    }
+  ],
+    "diversos": [
+      {
+        "imagen": "../assets/products/catBlanket.png",
+        "nombre": "Cotton cat blanket",
+        "precio": "60",
+        "id": 1
+      },
+      {
+        "imagen": "../assets/products/catMug.png",
+        "nombre": "Cat mug",
+        "precio": "60",
+        "id": 2
+      },
+      {
+        "imagen": "../assets/products/luckyCat.png",
+        "nombre": "Lucky cat",
+        "precio": "60",
+        "id": 3
+      },
+      {
+        "imagen": "../assets/products/catCookies.png",
+        "nombre": "Cat shaped coockies",
+        "precio": "60",
+        "id": 4
+      },
+      {
+        "imagen":"../assets/products/catStickers.png",
+        "nombre": "Stickers for Laptop",
+        "precio": "60",
+        "id": 5
+      },
+      {
+        "imagen": "../assets/products/catMug2.png",
+        "nombre": "Another cat mug",
+        "precio": "60",
+        "id": 6
+        
+      }
+    ]
+  }

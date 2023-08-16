@@ -1,8 +1,5 @@
 /*
 <li class="galeria__productos_items">
-    <span class="carritoIcon material-symbols-sharp">
-        shopping_cart
-    </span>
     <img class="galeria__productos_items__foto" src="./assets/products/luckyCat.png"/>
     <div class="galeria__productos__textCard">
         <p class="galeria__productos_items__nombre">
