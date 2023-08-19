@@ -35,7 +35,16 @@ const addProductDiversos = (imagen, nombre, precio) => {
   });
 };
 
-//crear nuevo producto desde form
+//crear nuevo producto desde form en controller.js
+
+//eliminar card de producto
+
+const deleteProduct = (id) => {
+  console.log(`eliminar a -----> ${id}`)
+  return fetch(`http://localhost:3000/saludBienestar/${id}`, {
+    method: "DELETE",
+  })
+}
 
 
 
@@ -48,4 +57,6 @@ export const productServices = {
   addProductSaludBienestar,
   addProductCamisetas,
   addProductDiversos,
+
+  deleteProduct,
 };
