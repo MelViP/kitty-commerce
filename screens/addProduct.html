@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="../css/footer/footerLogo.css" />
     <link rel="stylesheet" href="../css/footer/piePag__menu.css" />
     <link rel="stylesheet" href="../css/footer/piePag__form.css" />
-    <link rel="stylesheet" href="../css/effectsCSS/formBody.css">
-    <link rel="stylesheet" href="../css/effectsCSS/formFooter.css">
+    <link rel="stylesheet" href="../css/effectsCSS/formBody.css" />
+    <link rel="stylesheet" href="../css/effectsCSS/formFooter.css" />
   </head>
 
   <body>
@@ -42,7 +42,7 @@
                 class="menu__logo_logo logoPic"
                 alt="Logo PixelKitty Store"
                 src="../assets/logoCat.png"
-              >
+              />
             </a>
             <p class="menu__logo_leyenda logoLeyenda">
               <span class="menu__logo_leyenda_text logoText">Pixel</span>
@@ -51,21 +51,31 @@
             </p>
           </section>
           <section class="menu__busqueda">
-            <input type="text" class="menu__barraBusqueda input" placeholder="🔎  ¿Que deseas buscar?">
-        </section>
+            <input
+              type="text"
+              class="menu__barraBusqueda input"
+              placeholder="🔎  ¿Que deseas buscar?"
+            />
+          </section>
         </div>
         <button class="menu__btn_login btn">
-          <a class="menu__btn_login__text" href="./products.html">Menú admin ⇢ </a
+          <a class="menu__btn_login__text" href="./products.html"
+            >Menú admin ⇢ </a
           ><i></i>
         </button>
       </header>
 
-      <form class="add_NewProduct" action="form">
+      <form class="add_NewProduct" action="form" data-form>
         <fieldset>
           <h1>Agregar nuevo producto</h1>
           <section class="inputContainer">
-            <input class="formInput input" type="text" required="required"/>
-            <label>URL de la imagen</label>
+            <input
+              class="formInput input"
+              type="text"
+              required="required"
+              data-imgAddress
+            />
+            <label>Direccion de la imagen</label>
           </section>
           <section class="inputContainer">
             <select class="formInput input" type="text" required="required">
@@ -76,18 +86,20 @@
             </select>
           </section>
           <section class="inputContainer">
-            <input class="formInput input" type="text"/ required="required">
+            <input class="formInput input" type="text" required="required" data-productName>
             <label>Nombre de producto</label>
           </section>
-          <section class="inputContainer ">
-            <input class="formInput input" type="text" required="required"/>
+          <section class="inputContainer">
+            <input class="formInput input" type="text" required="required" data-productCost>
             <label>Precio del producto</label>
           </section>
           <section class="inputContainer">
-            <textarea class="formInput input"
-            required="required"
-            cols="30"
-            rows="10"
+            <textarea
+              class="formInput input"
+              required="required"
+              cols="30"
+              rows="10"
+              data-productDescription
             ></textarea>
             <label>Descripcion del producto</label>
           </section>
@@ -100,7 +112,8 @@
           <img
             class="piePag__logo_logo logoPic"
             alt="Logo PixelKitty Store"
-            src="../assets/logoCat.png">
+            src="../assets/logoCat.png"
+          />
           <p class="piePag__logo_leyenda logoLeyenda">
             <span class="piePag__logo_leyenda_text logoText piedPag"
               >Pixel</span
@@ -147,24 +160,44 @@
         <form class="contactUs">
           <p class="form__title destacado"><span>Hable con nosotros</span></p>
           <div class="inputBox">
-              <input type="text" data-type="name" pattern="[\s\S]{7,40}" class="form__input inputValidate input" id="contactUs_inputName" required="required">
-              <label for="contactUs_inputName">Nombre</label>
+            <input
+              type="text"
+              data-type="name"
+              pattern="[\s\S]{7,40}"
+              class="form__input inputValidate input"
+              id="contactUs_inputName"
+              required="required"
+            />
+            <label for="contactUs_inputName">Nombre</label>
 
-              <span class="input-message-error"> </span>
+            <span class="input-message-error"> </span>
           </div>
           <div class="inputBox">
-              <textarea data-type="message" class="form__textarea inputValidate input" id="contactUs_inputMessage" cols="30" rows="5" maxlength="100" minlength="10" required="required"></textarea>
-              <label for="contactUs_inputMessage">Escribe tu mensaje</label>
+            <textarea
+              data-type="message"
+              class="form__textarea inputValidate input"
+              id="contactUs_inputMessage"
+              cols="30"
+              rows="5"
+              maxlength="100"
+              minlength="10"
+              required="required"
+            ></textarea>
+            <label for="contactUs_inputMessage">Escribe tu mensaje</label>
 
-              <span class="input-message-error"> </span>
+            <span class="input-message-error"> </span>
           </div>
           <button class="form__btn btn"><span>Enviar</span><i></i></button>
-      </form>
+        </form>
       </footer>
     </main>
     <div class="rodapie">
       <p class="rodapie__credits">Desarrollado con el 🫀 por Mel</p>
     </div>
     <script src="../js/formValidation.js"></script>
+    <script
+      type="module"
+      src="../js/controllers/addProduct-service.js"
+    ></script>
   </body>
 </html>

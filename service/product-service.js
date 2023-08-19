@@ -4,7 +4,7 @@ const  productListCamisetas = () => fetch("http://localhost:3000/camisetas").the
 
 const productListDiversos = () => fetch("http://localhost:3000/diversos").then((response) => response.json());
 
-
+//agregar desde json data
 const addProductSaludBienestar = (imagen, nombre, precio) => {
   return fetch("http://localhost:3000/SaludBienestar", {
     method:"POST",
@@ -34,6 +34,9 @@ const addProductDiversos = (imagen, nombre, precio) => {
     body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()}),
   });
 };
+
+//crear nuevo producto desde form
+
 
 
 
