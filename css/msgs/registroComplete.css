@@ -1,0 +1,42 @@
+/*
+<section class="register-card">
+    <span class="register-card__icon-complete"></span>
+    <h1 class="register-card__title card__title">¡Producto registrado con exito!</h1>
+    <a href="./products.html" class="button">Ver productos</a>
+</section>*/
+body
+{
+   height: 100vh; 
+}
+.container
+{
+    height: 93.5%;
+    background: url(../../assets/cats__stores.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-card
+{ 
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.register-card
+{ 
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1.3125rem;
+    background-color: var(--backgroundDirt);
+    font-family: var(--titles);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+.register-card__icon-complete>img
+{
+    height: 10rem;
+}
+.register-card__title
+{
+    font-size: 1.758rem;
+}
