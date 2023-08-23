@@ -65,7 +65,7 @@
         </button>
       </header>
 
-      <form class="add_NewProduct" action="form" data-form>
+      <form class="add_NewProduct" data-form>
         <fieldset>
           <h1>Agregar nuevo producto</h1>
           <section class="inputContainer">
@@ -73,12 +73,12 @@
               class="formInput input"
               type="text"
               required="required"
-              data-imgAddress
+              data-img
             />
             <label>Direccion de la imagen</label>
           </section>
           <section class="inputContainer">
-            <select class="formInput input" type="text" required="required">
+            <select class="formInput input" type="text" required="required" data-categoria>
               <option value="Categoria" disabled selected>Categoria</option>
               <option value="Salud y Bienestar">Salud y Bienestar</option>
               <option value="Camisetas">Camisetas</option>
@@ -103,7 +103,7 @@
             ></textarea>
             <label>Descripcion del producto</label>
           </section>
-          <a class="add_product btn">Agregar producto</a>
+          <button type="submit" class="add_product btn">Agregar producto</button>
         </fieldset>
       </form>
 

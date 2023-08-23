@@ -1,5 +1,5 @@
 //GET
-
+//mostrar desde el json
 const productListSaludBienestar = () => fetch("http://localhost:3000/saludBienestar").then((response) => response.json()).catch(error => console.log(error));
 
 const  productListCamisetas = () => fetch("http://localhost:3000/camisetas").then((response) => response.json());
@@ -8,7 +8,7 @@ const productListDiversos = () => fetch("http://localhost:3000/diversos").then((
 
 
 ///POST
-//agregar desde json data
+//agregar al json data
 const addProductSaludBienestar = (imagen, nombre, precio) => {
   return fetch("http://localhost:3000/SaludBienestar", {
     method:"POST",
@@ -39,10 +39,8 @@ const addProductDiversos = (imagen, nombre, precio) => {
   });
 };
 
-//crear nuevo producto desde form en controller.js
-
-//eliminar card de producto
-
+//DELETE
+//borrar del json
 const deleteProductSaludBienestar = (id) => {
   console.log(`eliminar a -----> ${id}`)
   return fetch(`http://localhost:3000/saludBienestar/${id}`, {
@@ -63,7 +61,8 @@ const deleteProductDiversos = (id) => {
     method: "DELETE",
   })
 }
-
+//
+//editar datos del json
 
 
 export const productServices = {

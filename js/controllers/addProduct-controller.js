@@ -1,19 +1,57 @@
-import { productServices } from "../../service/product-service.js"
+import { productServices } from "../../service/product-service.js";
 
-const form = document.querySelector('[data-form]');
+const form = document.querySelector("[data-form]");
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-    event.preventDefault();
+  const imgAddress = document.querySelector("[data-img]").value;
+  const nombre = document.querySelector("[data-productName]").value;
+  const precio = document.querySelector("[data-productCost]").value;
+  const categoria = document.querySelector("[data-categoria]").value;
+  const descripcion = document.querySelector(
+    "[data-productDescription]"
+  ).value;
 
-    const imgAddress = document.querySelector(`[data-imgAddress]`).value;
-    const productName = document.querySelector(`[data-productName]`).value;
-    const productCost = document.querySelector(`[data-productCost]`).value;
-
-    const productDescription = document.querySelector(`[data-productDescription]`).value;
-
-    productServices.addProduct(imgAddress, productName, productCost, productDescription)
-        .then( () => {
-            window.location.href = "../../screens/addProductSuccesfull.html"
-        }).catch(error => console.log(`errorcito ocurrido ${error}`));
-})
+  switch (categoria) {
+    case "Salud y Bienestar":
+      productServices
+        .addProductSaludBienestar(
+          imgAddress,
+          nombre,
+          precio,
+          descripcion
+        )
+        .then(() => {
+          window.location.href = "../../screens/addProductSuccesfull.html";
+        })
+        .catch((error) => console.log(`errorcito ocurrido ${error}`));
+      break;
+    case "Camisetas":
+      productServices
+        .addProductCamisetas(
+          imgAddress,
+          nombre,
+          precio,
+          descripcion
+        )
+        .then(() => {
+          window.location.href = "../../screens/addProductSuccesfull.html";
+        })
+        .catch((error) => console.log(`errorcito ocurrido ${error}`));
+      break;
+    default:
+      productServices
+        .addProductDiversos(
+          imgAddress,
+          nombre,
+          precio,
+          descripcion
+        )
+        .then(() => {
+          window.location.href = "../../screens/addProductSuccesfull.html";
+        })
+        .catch((error) => console.log(`errorcito ocurrido ${error}`));
+      break;
+  }
+});
