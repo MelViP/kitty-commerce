@@ -1,8 +1,10 @@
-/* HOME products SHOW
+/* ADMIN CONSOLE HOME
 <li class="galeria__productos_items">
-
-
     <img class="galeria__productos_items__foto" src="./assets/products/luckyCat.png"/>
+    <div class="edit-deleteBTN">
+      <span class="material-symbols-outlined delete_products"> delete </span>
+      <span class="material-symbols-outlined edit_products"> edit </span>
+    </div>
     <div class="galeria__productos__textCard">
         <p class="galeria__productos_items__nombre">
             Lucky cat
@@ -25,22 +27,23 @@ const agregarProdSaludBienestar = (imagen, nombre, precio, id) => {
   linea.classList.add("galeria__productos_items");
   // linea.setAttribute('[data-funciones]');
   const content = `
-      <img class="galeria__productos_items__foto" src="${imagen}"/>
+    <img class="galeria__productos_items__foto" src="${imagen}"/>
+    <div class="btnContainer">
+      <span class="material-symbols-outlined delete_products"> delete </span>
+      <span class="material-symbols-outlined edit_products"> edit </span>
+    </div>
+    <div class="galeria__productos__textCard">
   
-      <div class="galeria__productos__textCard">
-  
-          <p class="galeria__productos_items__nombre">
-              ${nombre}
-          </p>
-          <p class="galeria__productos_items__precio destacado">
-              $${precio}
-          </p>
-          <a href="" class="galeria__productos--link destacado id="${id}">
-              Ver productos
-          </a>
-  
-      </div>  
-      `;
+      <p class="galeria__productos_items__nombre">
+        ${nombre}
+      </p>
+      <p class="galeria__productos_items__precio destacado">
+        $${precio}
+      </p>
+      <a href="" class="galeria__productos--link destacado id="${id}">
+        Ver productos
+      </a>
+    </div>`;
   linea.innerHTML = content;
   return linea;
 };
@@ -65,22 +68,23 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
   const linea = document.createElement("li");
   linea.classList.add("galeria__productos_items");
   const content = `
-      <img class="galeria__productos_items__foto" src="${imagen}"/>
+    <img class="galeria__productos_items__foto" src="${imagen}"/>
+    <div class="btnContainer">
+      <span class="material-symbols-outlined delete_products"> delete </span>
+      <span class="material-symbols-outlined edit_products"> edit </span>
+    </div>
+    <div class="galeria__productos__textCard">
   
-      <div class="galeria__productos__textCard">
-  
-          <p class="galeria__productos_items__nombre">
-              ${nombre}
-          </p>
-          <p class="galeria__productos_items__precio destacado">
-              $${precio}
-          </p>
-          <a href="" class="galeria__productos--link destacado id="${id}">
-              Ver productos
-          </a>
-  
-      </div>  
-      `;
+      <p class="galeria__productos_items__nombre">
+        ${nombre}
+      </p>
+      <p class="galeria__productos_items__precio destacado">
+        $${precio}
+      </p>
+      <a href="" class="galeria__productos--link destacado id="${id}">
+        Ver productos
+      </a>
+    </div>`;
   linea.innerHTML = content;
   return linea;
 };
@@ -104,21 +108,22 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
   linea.classList.add("galeria__productos_items");
   const content = `
     <img class="galeria__productos_items__foto" src="${imagen}"/>
-
+    <div class="btnContainer">
+      <span class="material-symbols-outlined delete_products"> delete </span>
+      <span class="material-symbols-outlined edit_products"> edit </span>
+    </div>
     <div class="galeria__productos__textCard">
-
-        <p class="galeria__productos_items__nombre">
-            ${nombre}
-        </p>
-        <p class="galeria__productos_items__precio destacado">
-            $${precio}
-        </p>
-        <a href="" class="galeria__productos--link destacado id="${id}">
-            Ver productos
-        </a>
-
-    </div>  
-    `;
+  
+      <p class="galeria__productos_items__nombre">
+        ${nombre}
+      </p>
+      <p class="galeria__productos_items__precio destacado">
+        $${precio}
+      </p>
+      <a href="" class="galeria__productos--link destacado id="${id}">
+        Ver productos
+      </a>
+    </div>`;
   linea.innerHTML = content;
   return linea;
 
