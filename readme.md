@@ -13,14 +13,19 @@ http://www.kitty-commerce.com/
 
 ## Lessons Learned
 
-- How to effectively name classes in html for latter use in more that one html page with the same css code
-- how to use simple keyframes in CSS
+- How to name classes in html that actually makes sense with the content
+- how to create simple keyframes in CSS for pointing animations
+- Ability to work in responsiveness
+- Git branches and updates from different machines
+- Git keys
+- Properly usage of DOM and CRUD: this was the hardest in my personal experience
 
 
 ## Features
 
 - Responsive site
-
+- Login
+- Add product from a form and show it the in admin panel
 
 ## Authors
 
