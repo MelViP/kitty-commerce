@@ -4,37 +4,37 @@
       "imagen": "../assets/products/catFood.png",
       "nombre": "Comida de Gato Montero",
       "precio": "60",
-      "id": 1
+      "id": 145
     },
     {
       "imagen": "../assets/products/catToysacrame.png",
       "nombre": "Macrame toy with catnip",
       "precio": "60",
-      "id": 2
+      "id": 278
     },
     {
       "imagen": "../assets/products/catToyscrath.png",
       "nombre": "Scratch board grinding nail",
       "precio": "60",
-      "id": 3
+      "id": 396
     },
     {
       "imagen": "../assets/products/catPlate.png",
       "nombre": "Plate design for the cat house",
       "precio": "60",
-      "id": 4
+      "id": 499
     },
     {
       "imagen": "../assets/products/catnip.png",
       "nombre": "Natural Catnip",
       "precio": "60",
-      "id": 5
+      "id": 545
     },
     {
       "imagen": "../assets/products/catBrush.png",
       "nombre": "Fine hair brush",
       "precio": "60",
-      "id": 6
+      "id": 663
     }
   ],
   "camisetas": [
@@ -42,37 +42,37 @@
       "imagen": "../assets/products/catTdad.png",
       "nombre": "Cat dad T-shirt",
       "precio": "60",
-      "id": 1
+      "id": 842
     },
     {
       "imagen": "../assets/products/catTsweeter.png",
       "nombre": "Sweeter cat mama",
       "precio": "60",
-      "id": 2
+      "id": 291
     },
     {
       "imagen": "../assets/products/catTpawsitive.png",
       "nombre": "Stay Pawsitive",
       "precio": "60",
-      "id": 3
+      "id": 321
     },
     {
       "imagen": "../assets/products/catTschrodinger.png",
       "nombre": "Schrodinger cat T-shirt",
       "precio": "60",
-      "id": 4
+      "id": 425
     },
     {
       "imagen": "../assets/products/catTworkout.png",
       "nombre": "I just want to workout and hang with my cat",
       "precio": "60",
-      "id": 5
+      "id": 547
     },
     {
       "imagen": "../assets/products/catTlocalstreetcat.png",
       "nombre": "Support your local street cat shirt",
       "precio": "60",
-      "id": 6
+      "id": 6666
     }
   ],
   "diversos": [
@@ -80,59 +80,43 @@
       "imagen": "../assets/products/catBlanket.png",
       "nombre": "Cotton cat blanket",
       "precio": "60",
-      "id": 1
+      "id": 100
     },
     {
       "imagen": "../assets/products/catMug.png",
       "nombre": "Cat mug",
       "precio": "60",
-      "id": 2
+      "id": 247
     },
     {
       "imagen": "../assets/products/luckyCat.png",
       "nombre": "Lucky cat",
       "precio": "60",
-      "id": 3
+      "id": 376
     },
     {
       "imagen": "../assets/products/catCookies.png",
       "nombre": "Cat shaped coockies",
       "precio": "60",
-      "id": 4
+      "id": 487
     },
     {
       "imagen": "../assets/products/catStickers.png",
       "nombre": "Stickers for Laptop",
       "precio": "60",
-      "id": 5
+      "id": 567
     },
     {
       "imagen": "../assets/products/catMug2.png",
       "nombre": "Another cat mug",
       "precio": "60",
-      "id": 6
-    },
-    {
-      "imagen": "https://cdn.pixabay.com/photo/2018/08/31/15/44/kitten-3644941_1280.jpg",
-      "precio": "Test",
-      "id": 7
-    },
-    {
-      "imagen": "https://cdn.pixabay.com/photo/2018/08/31/15/44/kitten-3644941_1280.jpg",
-      "precio": "test2",
-      "id": 8
-    },
-    {
-      "imagen": "https://cdn.pixabay.com/photo/2018/08/31/15/44/kitten-3644941_1280.jpg",
-      "nombre": "Diversos",
-      "precio": "test3",
-      "id": 9
+      "id": 666
     },
     {
       "imagen": "https://cdn.pixabay.com/photo/2018/08/31/15/44/kitten-3644941_1280.jpg",
       "nombre": "test4",
       "precio": "55",
-      "id": 10
+      "id": 10000
     }
   ]
 }

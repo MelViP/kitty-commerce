@@ -15,7 +15,7 @@ const addProductSaludBienestar = (imagen, nombre, precio) => {
     headers: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify({imagen, nombre, precio }),
+    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
   });
 };
 
@@ -25,7 +25,7 @@ const addProductCamisetas = (imagen, nombre, precio) => {
     headers: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify({imagen, nombre, precio }),
+    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
   });
 };
 
@@ -35,34 +35,42 @@ const addProductDiversos = (imagen, nombre, precio) => {
     headers: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify({imagen, nombre, precio }),
+    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
   });
 };
 
 //DELETE
 //borrar del json
 const deleteProductSaludBienestar = (id) => {
-  console.log(`eliminar a -----> ${id}`)
   return fetch(`http://localhost:3000/saludBienestar/${id}`, {
     method: "DELETE",
   })
 }
 
 const deleteProductCamisetas = (id) => {
-  console.log(`eliminar a -----> ${id}`)
   return fetch(`http://localhost:3000/camisetas/${id}`, {
     method: "DELETE",
   })
 }
 
 const deleteProductDiversos = (id) => {
-  console.log(`eliminar a -----> ${id}`)
   return fetch(`http://localhost:3000/diversos/${id}`, {
     method: "DELETE",
   })
 }
 //
 //editar datos del json
+const editProductsSaludBienestar = (id) => {
+  return fetch(`http://localhost:3000/saludBienestar/${id}`).then(response => response.json);
+}
+
+const editProductsCamisetas = (id) => {
+  return fetch(`http://localhost:3000/camisetas/${id}`).then(response => response.json);
+}
+
+const editProductsDiversos = (id) => {
+  return fetch(`http://localhost:3000/diversos/${id}`).then(response => response.json);
+}
 
 
 export const productServices = {
@@ -77,4 +85,8 @@ export const productServices = {
   deleteProductSaludBienestar,
   deleteProductCamisetas,
   deleteProductDiversos,
+
+  editProductsSaludBienestar,
+  editProductsCamisetas,
+  editProductsDiversos,
 };

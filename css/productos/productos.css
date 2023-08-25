@@ -27,18 +27,13 @@ a.home{
 .btnContainer>span{
     color: var(--fontDarkColor);
     display: block;
-    
 }
 .edit_products, .delete_products{
     cursor: pointer;
-}
-.edit_products:hover,
-.delete_products:hover{
-    transition: all .3s;
-    transform: scale(1.3);
+    margin: 0;
 }
 .edit_products:active,
 .delete_products:active{
     transition: all .3s;
-    transform: scale(1);
+    transform: scale(.8);
 }

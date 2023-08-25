@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>iKitty</title>
+    <title>Edite producto</title>
 
     <!--Styles sheets-->
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -50,13 +50,6 @@
               <span class="menu__logo_leyenda_text logoText">Store</span>
             </p>
           </section>
-          <section class="menu__busqueda">
-            <input
-              type="text"
-              class="menu__barraBusqueda input"
-              placeholder="🔎  ¿Que deseas buscar?"
-            />
-          </section>
         </div>
         <button class="menu__btn_login btn">
           <a class="menu__btn_login__text" href="./products.html"
@@ -67,7 +60,7 @@
 
       <form class="add_NewProduct" data-form>
         <fieldset>
-          <h1>Agregar nuevo producto</h1>
+          <h1>Edite su producto</h1>
           <section class="inputContainer">
             <input
               class="formInput input"
@@ -78,7 +71,7 @@
             <label>Direccion de la imagen</label>
           </section>
           <section class="inputContainer">
-            <select class="formInput input" type="text" required="required" data-categoria>
+            <select class="formInput input" type="text" required="required" data-category>
               <option value="Categoria" disabled selected>Categoria</option>
               <option value="Salud y Bienestar">Salud y Bienestar</option>
               <option value="Camisetas">Camisetas</option>
@@ -103,7 +96,7 @@
             ></textarea>
             <label>Descripcion del producto</label>
           </section>
-          <button type="submit" class="add_product btn">Agregar producto</button>
+          <button type="submit" class="add_product btn">Guardar producto</button>
         </fieldset>
       </form>
 
@@ -196,14 +189,8 @@
     </div>
     <script src="../js/formValidation.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
-      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
       type="module"
-      src="../js/controllers/addProduct-controller.js"
+      src="../js/controllers/editProduct-controller.js"
     ></script>
   </body>
 </html>

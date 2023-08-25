@@ -1,10 +1,12 @@
 /* ADMIN CONSOLE HOME
 <li class="galeria__productos_items">
     <img class="galeria__productos_items__foto" src="./assets/products/luckyCat.png"/>
-    <div class="edit-deleteBTN">
-      <span class="material-symbols-outlined delete_products"> delete </span>
-      <span class="material-symbols-outlined edit_products"> edit </span>
-    </div>
+    <button class="delete_products">
+      <span class="material-symbols-outlined "> delete </span>
+    </button>
+    <a href="../../screens/addProduct.html" class="edit_products">
+      <span class="material-symbols-outlined "> edit </span>
+    </a>
     <div class="galeria__productos__textCard">
         <p class="galeria__productos_items__nombre">
             Lucky cat
@@ -20,17 +22,21 @@
 */
 
 import { productServices } from "../../service/product-service.js";
-//agregar prod salud y bienestar
 
+
+//agregar prod salud y bienestar
 const agregarProdSaludBienestar = (imagen, nombre, precio, id) => {
   const linea = document.createElement("li");
   linea.classList.add("galeria__productos_items");
-  // linea.setAttribute('[data-funciones]');
   const content = `
     <img class="galeria__productos_items__foto" src="${imagen}"/>
     <div class="btnContainer">
-      <span class="material-symbols-outlined delete_products"> delete </span>
-      <span class="material-symbols-outlined edit_products"> edit </span>
+    <button class="delete_products btn" id="${id}">
+      <span class="material-symbols-outlined "> delete </span>
+    </button>
+    <a href="../../screens/editProduct.html?${id}" class="edit_products btn" id="${id}">
+      <span class="material-symbols-outlined "> edit </span>
+    </a>
     </div>
     <div class="galeria__productos__textCard">
   
@@ -45,12 +51,19 @@ const agregarProdSaludBienestar = (imagen, nombre, precio, id) => {
       </a>
     </div>`;
   linea.innerHTML = content;
+//Delete product here
+  const btn = linea.querySelector("button");
+  btn.addEventListener('click', () =>{
+    const id = btn.id;
+    productServices.deleteProductSaludBienestar(id).then( response => {
+      console.log(response)
+    }).catch(error => alert(`ocurrio un errorcin`))
+  });
+
   return linea;
 };
 
-const prodBox_saludBienestar = document.querySelector(
-  "[data-productosSaludBienestar]"
-);
+const prodBox_saludBienestar = document.querySelector("[data-productosSaludBienestar]");
 
 productServices
   .productListSaludBienestar()
@@ -70,8 +83,12 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
   const content = `
     <img class="galeria__productos_items__foto" src="${imagen}"/>
     <div class="btnContainer">
-      <span class="material-symbols-outlined delete_products"> delete </span>
-      <span class="material-symbols-outlined edit_products"> edit </span>
+    <button class="delete_products btn" id="${id}">
+      <span class="material-symbols-outlined "> delete </span>
+    </button>
+    <a href="../../screens/editProduct.html?${id}" class="edit_products btn" id="${id}">
+      <span class="material-symbols-outlined "> edit </span>
+    </a>
     </div>
     <div class="galeria__productos__textCard">
   
@@ -86,6 +103,16 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
       </a>
     </div>`;
   linea.innerHTML = content;
+
+  const btn = linea.querySelector("button");
+  btn.addEventListener('click', () =>{
+    const id = btn.id;
+    productServices.deleteProductCamisetas(id).then( response => {
+      console.log(response)
+    }).catch(error => alert(`ocurrio un errorcin`))
+  });
+
+
   return linea;
 };
 
@@ -109,8 +136,12 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
   const content = `
     <img class="galeria__productos_items__foto" src="${imagen}"/>
     <div class="btnContainer">
-      <span class="material-symbols-outlined delete_products"> delete </span>
-      <span class="material-symbols-outlined edit_products"> edit </span>
+    <button class="delete_products btn" id="${id}">
+      <span class="material-symbols-outlined "> delete </span>
+    </button>
+    <a href="../../screens/editProduct.html?${id}" class="edit_products btn" id="${id}">
+      <span class="material-symbols-outlined"> edit </span>
+    </a>
     </div>
     <div class="galeria__productos__textCard">
   
@@ -125,9 +156,16 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
       </a>
     </div>`;
   linea.innerHTML = content;
-  return linea;
 
-  console.log(linea);
+  const btn = linea.querySelector("button");
+  btn.addEventListener('click', () =>{
+    const id = btn.id;
+    productServices.deleteProductDiversos(id).then( response => {
+      console.log(response)
+    }).catch(error => alert(`ocurrio un errorcin`))
+  });
+
+  return linea;
 };
 
 const prodBox_diversos = document.querySelector("[data-productosDiversos]");
@@ -142,3 +180,4 @@ productServices
     });
   })
   .catch((error) => alert("Ocurrio un errorcito"));
+
