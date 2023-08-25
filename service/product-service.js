@@ -1,92 +1,70 @@
+const urlAPI = "http://localhost:3000/productos";
+
 //GET
 //mostrar desde el json
-const productListSaludBienestar = () => fetch("http://localhost:3000/saludBienestar").then((response) => response.json()).catch(error => console.log(error));
-
-const  productListCamisetas = () => fetch("http://localhost:3000/camisetas").then((response) => response.json());
-
-const productListDiversos = () => fetch("http://localhost:3000/diversos").then((response) => response.json());
-
+const productList = async (queryCategoriaConsulta) => {
+  const urlConsultaAPI = `${urlAPI}${queryCategoriaConsulta}`;
+  try {
+    const responseObjeto = await fetch(urlConsultaAPI);
+    const response = await responseObjeto.json();
+    return response;
+  } catch (error) {
+    console.log("Ha ocurrido un error en el GET");
+    throw error;
+  }
+};
 
 ///POST
 //agregar al json data
-const addProductSaludBienestar = (imagen, nombre, precio) => {
-  return fetch("http://localhost:3000/SaludBienestar", {
-    method:"POST",
-    headers: {
-      "Content-type": "application/json",
-    },
-    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
-  });
-};
 
-const addProductCamisetas = (imagen, nombre, precio) => {
-  return fetch("http://localhost:3000/camisetas", {
-    method:"POST",
+const addProduct = (categoria, imagen, nombre, precio, descripcion) => {
+  return fetch(urlAPI, {
+    method: "POST",
     headers: {
       "Content-type": "application/json",
     },
-    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
-  });
-};
-
-const addProductDiversos = (imagen, nombre, precio) => {
-  return fetch("http://localhost:3000/diversos", {
-    method:"POST",
-    headers: {
-      "Content-type": "application/json",
-    },
-    body: JSON.stringify({imagen, nombre, precio, id: uuid.v4()  }),
+    body: JSON.stringify({
+      categoria,
+      imagen,
+      nombre,
+      precio,
+      descripcion,
+      id: uuid.v4(),
+    }),
   });
 };
 
 //DELETE
 //borrar del json
-const deleteProductSaludBienestar = (id) => {
-  return fetch(`http://localhost:3000/saludBienestar/${id}`, {
+const deleteProduct = (id) => {
+  const urlAPIDelete = `${urlAPI}/${id}`;
+  return fetch(urlAPIDelete, {
     method: "DELETE",
-  })
-}
+  });
+};
 
-const deleteProductCamisetas = (id) => {
-  return fetch(`http://localhost:3000/camisetas/${id}`, {
-    method: "DELETE",
-  })
-}
-
-const deleteProductDiversos = (id) => {
-  return fetch(`http://localhost:3000/diversos/${id}`, {
-    method: "DELETE",
-  })
-}
-//
 //editar datos del json
-const editProductsSaludBienestar = (id) => {
-  return fetch(`http://localhost:3000/saludBienestar/${id}`).then(response => response.json);
-}
-
-const editProductsCamisetas = (id) => {
-  return fetch(`http://localhost:3000/camisetas/${id}`).then(response => response.json);
-}
-
-const editProductsDiversos = (id) => {
-  return fetch(`http://localhost:3000/diversos/${id}`).then(response => response.json);
-}
-
+const editProduct = (categoria, imagen, nombre, precio, descripcion, id) => {
+  const urlAPIEdit = `${urlAPI}/${id}`;
+  return fetch(urlAPIEdit, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      categoria,
+      imagen,
+      nombre,
+      precio,
+      descripcion,
+      id: id,
+    }),
+  });
+};
 
 export const productServices = {
-  productListSaludBienestar,
-  productListCamisetas,
-  productListDiversos,
-  
-  addProductSaludBienestar,
-  addProductCamisetas,
-  addProductDiversos,
-
-  deleteProductSaludBienestar,
-  deleteProductCamisetas,
-  deleteProductDiversos,
-
-  editProductsSaludBienestar,
-  editProductsCamisetas,
-  editProductsDiversos,
+  productList,
+  addProduct,
+  deleteProduct,
+  editProduct,
 };

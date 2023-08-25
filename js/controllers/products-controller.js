@@ -50,7 +50,7 @@ const prodBox_saludBienestar = document.querySelector(
 );
 
 productServices
-  .productListSaludBienestar()
+  .productList(`?categoria=saludBienestar`)
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -88,7 +88,7 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
 const prodBox_camisetas = document.querySelector("[data-productosCamisetas]");
 
 productServices
-  .productListCamisetas()
+  .productList(`?categoria=camisetas`)
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -128,7 +128,7 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
 const prodBox_diversos = document.querySelector("[data-productosDiversos]");
 
 productServices
-  .productListDiversos()
+  .productList("?categoria=diversos")
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -137,5 +137,3 @@ productServices
     });
   })
   .catch((error) => alert("Ocurrio un errorcito"));
-
-

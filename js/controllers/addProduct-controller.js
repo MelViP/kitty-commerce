@@ -9,19 +9,12 @@ form.addEventListener("submit", (event) => {
   const nombre = document.querySelector("[data-productName]").value;
   const precio = document.querySelector("[data-productCost]").value;
   const categoria = document.querySelector("[data-categoria]").value;
-  const descripcion = document.querySelector(
-    "[data-productDescription]"
-  ).value;
+  const descripcion = document.querySelector("[data-productDescription]").value;
 
   switch (categoria) {
     case "Salud y Bienestar":
       productServices
-        .addProductSaludBienestar(
-          imgAddress,
-          nombre,
-          precio,
-          descripcion
-        )
+        .addProduct("saludBienestar", imgAddress, nombre, precio, descripcion)
         .then(() => {
           window.location.href = "../../screens/addProductSuccesfull.html";
         })
@@ -29,12 +22,7 @@ form.addEventListener("submit", (event) => {
       break;
     case "Camisetas":
       productServices
-        .addProductCamisetas(
-          imgAddress,
-          nombre,
-          precio,
-          descripcion
-        )
+        .addProduct("camisetas", imgAddress, nombre, precio, descripcion)
         .then(() => {
           window.location.href = "../../screens/addProductSuccesfull.html";
         })
@@ -42,12 +30,7 @@ form.addEventListener("submit", (event) => {
       break;
     default:
       productServices
-        .addProductDiversos(
-          imgAddress,
-          nombre,
-          precio,
-          descripcion
-        )
+        .addProduct("diversos", imgAddress, nombre, precio, descripcion)
         .then(() => {
           window.location.href = "../../screens/addProductSuccesfull.html";
         })
