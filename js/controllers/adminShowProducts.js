@@ -23,7 +23,6 @@
 
 import { productServices } from "../../service/product-service.js";
 
-
 //agregar prod salud y bienestar
 const agregarProdSaludBienestar = (imagen, nombre, precio, id) => {
   const linea = document.createElement("li");
@@ -51,22 +50,27 @@ const agregarProdSaludBienestar = (imagen, nombre, precio, id) => {
       </a>
     </div>`;
   linea.innerHTML = content;
-//Delete product here
+  //Delete product here
   const btn = linea.querySelector("button");
-  btn.addEventListener('click', () =>{
+  btn.addEventListener("click", () => {
     const id = btn.id;
-    productServices.deleteProductSaludBienestar(id).then( response => {
-      console.log(response)
-    }).catch(error => alert(`ocurrio un errorcin`))
+    productServices
+      .deleteProduct(id)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => alert(`ocurrio un errorcin`));
   });
 
   return linea;
 };
 
-const prodBox_saludBienestar = document.querySelector("[data-productosSaludBienestar]");
+const prodBox_saludBienestar = document.querySelector(
+  "[data-productosSaludBienestar]"
+);
 
 productServices
-  .productListSaludBienestar()
+  .productList("?categoria=saludBienestar")
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -105,13 +109,15 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
   linea.innerHTML = content;
 
   const btn = linea.querySelector("button");
-  btn.addEventListener('click', () =>{
+  btn.addEventListener("click", () => {
     const id = btn.id;
-    productServices.deleteProductCamisetas(id).then( response => {
-      console.log(response)
-    }).catch(error => alert(`ocurrio un errorcin`))
+    productServices
+      .deleteProduct(id)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => alert(`ocurrio un errorcin`));
   });
-
 
   return linea;
 };
@@ -119,7 +125,7 @@ const agregarProdCamisetas = (imagen, nombre, precio, id) => {
 const prodBox_camisetas = document.querySelector("[data-productosCamisetas]");
 
 productServices
-  .productListCamisetas()
+  .productList("?categoria=camisetas")
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -157,12 +163,15 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
     </div>`;
   linea.innerHTML = content;
 
-  const btn = linea.querySelector("button");
-  btn.addEventListener('click', () =>{
+  const btn = linea.querySelector("[class='delete_products btn']");
+  btn.addEventListener("click", () => {
     const id = btn.id;
-    productServices.deleteProductDiversos(id).then( response => {
-      console.log(response)
-    }).catch(error => alert(`ocurrio un errorcin`))
+    productServices
+      .deleteProduct(id)
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => alert(`ocurrio un errorcin`));
   });
 
   return linea;
@@ -171,7 +180,7 @@ const agregarProdDiversos = (imagen, nombre, precio, id) => {
 const prodBox_diversos = document.querySelector("[data-productosDiversos]");
 
 productServices
-  .productListDiversos()
+  .productList("?categoria=diversos")
   .then((data) => {
     data.forEach(({ imagen, nombre, precio, id }) => {
       // console.log(perfil)
@@ -180,4 +189,3 @@ productServices
     });
   })
   .catch((error) => alert("Ocurrio un errorcito"));
-
